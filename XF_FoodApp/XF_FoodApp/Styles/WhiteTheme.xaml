@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Source="General.xaml"
+             mc:Ignorable="d">
+
+    <Color x:Key="colAccentCheck">#FFE7F9F5</Color>
+    <Color x:Key="colAccentError">#FFF9E7EB</Color>
+    <Color x:Key="colBG">#FFF5F8FB</Color>
+    <Color x:Key="colCheck">#FF10CA87</Color>
+    <Color x:Key="colError">#FFCA1030</Color>
+    <Color x:Key="colPrim">#FF9A196B</Color>
+    <Color x:Key="colRemPrim">#FFF93963</Color>
+    <Color x:Key="colRemSub">#FFD4145C</Color>
+    <Color x:Key="colTxtDes">#FF000000</Color>
+    <Color x:Key="colTxtEnt">#FF4D4D53</Color>
+    <Color x:Key="colTxtPrim">#FF26315F</Color>
+    <Color x:Key="colTxtSec">#FF56565A</Color>
+    <Color x:Key="colTxtSub">#FFE3E7EF</Color>
+    <Color x:Key="colTxtTit">#FFFFFFFF</Color>
+
+</ResourceDictionary>

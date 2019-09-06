@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Sizes.xaml" />
+        <ResourceDictionary Source="Text.xaml" />
+        <ResourceDictionary Source="Icons.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+  
+    <!-- STYLES WelcomePage-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <Style TargetType="Button" x:Key="btn1Welcome">
+        <Setter Property="FontSize" Value="14"/> 
+        <Setter Property="TextColor" Value="Green"/>
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="CornerRadius" Value="15"/>
+    </Style>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+</ResourceDictionary>

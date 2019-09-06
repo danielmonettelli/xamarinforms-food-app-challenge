@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       mc:Ignorable="d"
+       xmlns:local="clr-namespace:XF_FoodApp.Views"
+       FlyoutBehavior="Locked"
+       Title="XF_FoodApp"
+       x:Class="XF_FoodApp.AppShell">
+
+    <!-- 
+        Styles and Resources 
+    -->
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="NavigationPrimary">#DFC625</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource NavigationPrimary}"/>
+            </Style>
+            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <!-- Your Pages -->
+    <TabBar Style="{StaticResource BaseStyle}">
+    
+        <Tab Title="Explore" Icon="{StaticResource IconDemo}">
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        </Tab>
+        <Tab Title="My order" Icon="{StaticResource IconDemo2}">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+        <Tab Title="Favourite" Icon="{StaticResource IconDemo3}">
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        </Tab>
+        <Tab Title="Profile" Icon="{StaticResource IconDemo4}">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+        
+    </TabBar>
+
+    <!-- Optional Templates 
+    // These may be provided inline as below or as separate classes.
+
+    // This header appears at the top of the Flyout.
+    <Shell.FlyoutHeaderTemplate>
+	<DataTemplate>
+            <Grid>ContentHere</Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+    // ItemTemplate is for ShellItems as displayed in a Flyout
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <ContentView>
+                Bindable Properties: Title, Icon
+            </ContentView>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    // MenuItemTemplate is for MenuItems as displayed in a Flyout
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <ContentView>
+                Bindable Properties: Text, Icon
+            </ContentView>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>
+
+    -->
+
+</Shell>

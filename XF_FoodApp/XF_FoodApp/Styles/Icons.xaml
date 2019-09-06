@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:MaterialFont="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
+             mc:Ignorable="d">
+
+    <!-- MATERIAL ICONS FONT-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <OnPlatform x:Key="MaterialFont"
+                x:TypeArguments="x:String"
+                Android="materialdesignicons-webfont.ttf#materialdesignicons"
+                iOS="materialdesignicons-webfont" />
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+    <!-- CUSTOM ICONS FONT WITH METRO STUDIO -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <OnPlatform x:Key="CustomFont"
+                x:TypeArguments="x:String"
+                Android="customiconsfont-mobilefont.ttf#customiconsfont-mobilefont"
+                iOS="customiconsfont-mobilefont" />
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+    <!-- COLOR ICONS FONT -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <Color x:Key="TabColorIcon">#17221D</Color>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+    <!-- SIZE ICONS FONT -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <x:Double x:Key="TabSizeIcon">140</x:Double>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+    
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> OPTIONAL <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- PLATFORMS CHANGE ICONS FONT FOR Glyph -->
+    <!--=====================================================================-->
+    <OnPlatform x:Key="OnStringIcon"
+                x:TypeArguments="x:String"
+                Android="{x:Static MaterialFont:IconFont.AccessPoint}"
+                iOS="{x:Static MaterialFont:IconFont.Facebook}" />
+    <!--=====================================================================-->
+
+    <!-- PLATFORMS COLOR ICONS FONT -->
+    <!--=====================================================================-->
+    <OnPlatform x:Key="OnColorIcon"
+                x:TypeArguments="Color"
+                Android="#17D47E"
+                iOS="#EA29E2" />
+    <!--=====================================================================-->
+
+    <!-- PLATFORMS SIZE ICONS FONT -->
+    <!--=====================================================================-->
+    <OnPlatform x:Key="OnSizeIcon"
+                x:TypeArguments="x:Double"
+                Android="200"
+                iOS="30" />
+    <!--=====================================================================-->
+
+    <!-- PLATFORMS IN FontImageSource-->
+    <!--=====================================================================-->
+    <FontImageSource x:Key="IconDemo"
+                     FontFamily="{StaticResource MaterialFont}"
+                     Glyph="{StaticResource OnStringIcon}"
+                     Size="{StaticResource OnSizeIcon}"
+                     Color="{StaticResource OnColorIcon}" />
+    <!--=====================================================================-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <FontImageSource x:Key="IconDemo2"
+                     FontFamily="{StaticResource MaterialFont}"
+                     Glyph="{x:Static MaterialFont:IconFont.Twitter}"
+                     Size="{StaticResource TabSizeIcon}"
+                     Color="{StaticResource TabColorIcon}" />
+
+    <FontImageSource x:Key="IconDemo3"
+                     FontFamily="{StaticResource MaterialFont}"
+                     Glyph="{x:Static MaterialFont:IconFont.AccessPointNetwork}"
+                     Size="{StaticResource TabSizeIcon}"
+                     Color="{StaticResource TabColorIcon}" />
+
+    <FontImageSource x:Key="IconDemo4"
+                     FontFamily="{StaticResource MaterialFont}"
+                     Glyph="{x:Static MaterialFont:IconFont.Microsoft}"
+                     Size="{StaticResource TabSizeIcon}"
+                     Color="{StaticResource TabColorIcon}" />
+
+    <FontImageSource x:Key="IconDemo5"
+                     FontFamily="{StaticResource MaterialFont}"
+                     Glyph="{x:Static MaterialFont:IconFont.Linkedin}"
+                     Size="{StaticResource TabSizeIcon}"
+                     Color="{StaticResource TabColorIcon}" />
+
+    <FontImageSource x:Key="IconDemo6"
+                     FontFamily="{StaticResource MaterialFont}"
+                     Glyph="{x:Static MaterialFont:IconFont.Check}"
+                     Size="{StaticResource TabSizeIcon}"
+                     Color="{StaticResource TabColorIcon}" />
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+</ResourceDictionary>

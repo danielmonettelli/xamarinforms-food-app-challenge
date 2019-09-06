@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d">
+    
+    <!-- FONTSFAMILY [ProductSans] -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont_ProductSans">
+        <On Platform="Android" Value="FontsFamily/ProductSans-Bold.ttf#ProductSans"/>
+        <On Platform="iOS" Value="ProductSans-Bold" />
+    </OnPlatform>
+
+    <OnPlatform x:TypeArguments="x:String" x:Key="BoldItalicFont_ProductSans">
+        <On Platform="Android" Value="FontsFamily/ProductSans-BoldItalic.ttf#ProductSans"/>
+        <On Platform="iOS" Value="ProductSans-BoldItalic" />
+    </OnPlatform>
+
+    <OnPlatform x:TypeArguments="x:String" x:Key="ItalicFont_ProductSans">
+        <On Platform="Android" Value="FontsFamily/ProductSans-Italic.ttf#ProductSans"/>
+        <On Platform="iOS" Value="ProductSans-Italic" />
+    </OnPlatform>
+
+    <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont_ProductSans">
+        <On Platform="Android" Value="FontsFamily/ProductSans-Regular.ttf#ProductSans"/>
+        <On Platform="iOS" Value="ProductSans-Regular" />
+    </OnPlatform>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+    
+    <!-- TEXT SIZE [MATERIAL DESIGN] -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- H3-Regular -->
+    <x:Double x:Key="TxtSizeH3">48</x:Double>
+    <!-- H4-Regular -->
+    <x:Double x:Key="TxtSizeH4">34</x:Double>
+    <!-- H5-Regular -->
+    <x:Double x:Key="TxtSizeH5">24</x:Double>
+    <!-- H6-Medium, (Bold) -->
+    <x:Double x:Key="TxtSizeH6">20</x:Double>
+    <!-- Title-Medium, (Bold) -->
+    <x:Double x:Key="TxtSizeTit">18</x:Double>
+    <!-- SubTitle1-Regular, (Bold) -->
+    <x:Double x:Key="TxtSizeSubTit1">16</x:Double>
+    <!-- SubTitle2-Medium, (Bold) -->
+    <x:Double x:Key="TxtSizeSubTit2">14</x:Double>
+    <!-- Body1-Regular -->
+    <x:Double x:Key="TxtSizeBod1">16</x:Double>
+    <!-- Body2-Regular -->
+    <x:Double x:Key="TxtSizeBod2">14</x:Double>
+    <!-- Caption-Regular -->
+    <x:Double x:Key="TxtSizeCap">12</x:Double>
+    <!-- Overline-Regular -->
+    <x:Double x:Key="TxtSizeOver">10</x:Double>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+    <!-- STYLES TEXT -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <Style x:Key="TxtTit_Prim" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit}" />
+        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
+    </Style>
+    
+    <Style x:Key="TxtTit_Sec" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
+    </Style>
+
+    <Style x:Key="TxtHeadLine_Prim" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeH4}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
+    </Style>
+
+    <Style x:Key="TxtBtnSubTit_Prim" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit1}" />
+        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
+    </Style>
+
+    <Style x:Key="TxtBtnSubTit_Sec" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit2}" />
+        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
+    </Style>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+</ResourceDictionary>
