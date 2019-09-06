@@ -5,7 +5,7 @@
                     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                     mc:Ignorable="d">
-    
+
     <!-- FONTSFAMILY [ProductSans] -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont_ProductSans">
@@ -28,8 +28,8 @@
         <On Platform="iOS" Value="ProductSans-Regular" />
     </OnPlatform>
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    
-    
+
+
     <!-- TEXT SIZE [MATERIAL DESIGN] -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <!-- H3-Regular -->
@@ -60,11 +60,11 @@
     <!-- STYLES TEXT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <Style x:Key="TxtTit_Prim" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
+        <Setter Property="TextColor" Value="{DynamicResource colCheck}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeTit}" />
         <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
     </Style>
-    
+
     <Style x:Key="TxtTit_Sec" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeTit}" />

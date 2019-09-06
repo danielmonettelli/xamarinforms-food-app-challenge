@@ -5,14 +5,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
-    
+
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="Sizes.xaml" />
-        <ResourceDictionary Source="Text.xaml" />
+        <ResourceDictionary Source="Texts.xaml" />
         <ResourceDictionary Source="Icons.xaml" />
+        <ResourceDictionary Source="Sizes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    
-  
+
+
     <!-- STYLES WelcomePage-->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <Style TargetType="Button" x:Key="btn1Welcome">

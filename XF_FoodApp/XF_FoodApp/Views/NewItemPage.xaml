@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="XF_FoodApp.Views.NewItemPage"
+             Visual="Material"
              Title="New Item">
     
     <ContentPage.ToolbarItems>
@@ -14,10 +15,11 @@
     
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
-            <Entry Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />
-            <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
+            <Entry Text="{Binding Item.Text}" Placeholder="Name" FontSize="Small" />
+            <Editor Text="{Binding Item.Description}" 
+                    Placeholder="Description" 
+                    FontSize="Small" 
+                    Margin="0" />
         </StackLayout>
     </ContentPage.Content>
     

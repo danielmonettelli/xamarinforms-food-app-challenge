@@ -27,7 +27,7 @@
     <EmbeddedResource Update="Styles\Sizes.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Styles\Text.xaml">
+    <EmbeddedResource Update="Styles\Texts.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Styles\WhiteTheme.xaml">

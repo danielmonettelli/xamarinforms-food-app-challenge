@@ -12,9 +12,9 @@
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
 
-    <Grid>
+    <Grid Style="{StaticResource GridSpacing}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0"
                     Orientation="Vertical">

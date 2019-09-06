@@ -7,7 +7,7 @@
              x:Class="XF_FoodApp.App">
     
     <Application.Resources>
-        <ResourceDictionary Source="/Styles/General.xaml" />
+        <ResourceDictionary Source="/Styles/WhiteTheme.xaml" />
     </Application.Resources>
     
 </Application>
