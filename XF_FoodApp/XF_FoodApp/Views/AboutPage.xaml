@@ -19,10 +19,12 @@
         <ScrollView Grid.Row="0"
                     Orientation="Vertical">
             <StackLayout
-                     Orientation="Vertical">
+                     Orientation="Vertical"
+                Spacing="0">
                 <Label Text="MyDemo" Style="{StaticResource TxtTit_Prim}"/>
-                <Image Source="{StaticResource IconDemo}"/>
-                <Image Source="{StaticResource IconDemo3}"/>
+                <Image Source="{StaticResource IconDemo2}"/>
+                <Image Source="{StaticResource IconDemo3}"
+                       BackgroundColor="green"/>
                 <Image Source="{StaticResource IconDemo4}"/>
                 <Image Source="{StaticResource IconDemo5}"/>
                 <Image Source="{StaticResource IconDemo6}"/>

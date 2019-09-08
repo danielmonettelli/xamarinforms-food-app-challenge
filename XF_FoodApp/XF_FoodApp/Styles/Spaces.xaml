@@ -5,21 +5,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
-
+    
+    <OnPlatform x:TypeArguments="Thickness" x:Key="spaceSmall">
+        <On Platform="Android" Value="16,0"/>
+        <On Platform="iOS" Value="18,0"/>
+    </OnPlatform>
+    
+    
     <Style TargetType="Grid" x:Key="GridSpacing">
-        
+
         <Setter Property="RowSpacing" Value="0"/>
         <Setter Property="ColumnSpacing" Value="0"/>
-        
-        <Setter Property="Padding">
-            <Setter.Value>
-                <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="Android" Value="20,50,10,40"/>
-                    <On Platform="Android" Value="20,20,20,20"/>
-                </OnPlatform>
-            </Setter.Value>
-        </Setter>
-        
+
+        <Setter Property="Padding" Value="{StaticResource spaceSmall}"/>
+
     </Style>
 
 </ResourceDictionary>

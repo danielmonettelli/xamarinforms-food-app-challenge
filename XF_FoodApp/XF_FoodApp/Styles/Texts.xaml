@@ -60,7 +60,7 @@
     <!-- STYLES TEXT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <Style x:Key="TxtTit_Prim" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource colCheck}" />
+        <Setter Property="TextColor" Value="{DynamicResource colAccentCheck}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeTit}" />
         <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
     </Style>

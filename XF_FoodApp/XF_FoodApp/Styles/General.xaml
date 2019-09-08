@@ -9,7 +9,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Texts.xaml" />
         <ResourceDictionary Source="Icons.xaml" />
-        <ResourceDictionary Source="Sizes.xaml" />
+        <ResourceDictionary Source="Spaces.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 

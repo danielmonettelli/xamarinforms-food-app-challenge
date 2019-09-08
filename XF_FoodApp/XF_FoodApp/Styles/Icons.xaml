@@ -7,7 +7,7 @@
              xmlns:MaterialFont="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
              mc:Ignorable="d">
 
-    <!-- MATERIAL ICONS FONT-->
+    <!-- MATERIAL ICONS FONT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <OnPlatform x:Key="MaterialFont"
                 x:TypeArguments="x:String"
@@ -15,17 +15,17 @@
                 iOS="materialdesignicons-webfont" />
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     
-    <!-- CUSTOM ICONS FONT WITH METRO STUDIO -->
+    <!-- CUSTOM ICONS FONT WITH IconMoon -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <OnPlatform x:Key="CustomFont"
+    <OnPlatform x:Key="CustomIconFont"
                 x:TypeArguments="x:String"
-                Android="customiconsfont-mobilefont.ttf#customiconsfont-mobilefont"
-                iOS="customiconsfont-mobilefont" />
+                Android="CustomIconFont.ttf#CustomIconFont"
+                iOS="CustomIconFont" />
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     
     <!-- COLOR ICONS FONT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <Color x:Key="TabColorIcon">#17221D</Color>
+    <Color x:Key="TabColorIcon">#BABEC6</Color>
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     
     <!-- SIZE ICONS FONT -->
@@ -41,7 +41,7 @@
     <OnPlatform x:Key="OnStringIcon"
                 x:TypeArguments="x:String"
                 Android="{x:Static MaterialFont:IconFont.AccessPoint}"
-                iOS="{x:Static MaterialFont:IconFont.Facebook}" />
+                iOS="{x:Static MaterialFont:IconFont.Cached}" />
     <!--=====================================================================-->
 
     <!-- PLATFORMS COLOR ICONS FONT -->
@@ -73,8 +73,8 @@
 
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <FontImageSource x:Key="IconDemo2"
-                     FontFamily="{StaticResource MaterialFont}"
-                     Glyph="{x:Static MaterialFont:IconFont.Twitter}"
+                     FontFamily="{StaticResource CustomIconFont}"
+                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_checked2}"
                      Size="{StaticResource TabSizeIcon}"
                      Color="{StaticResource TabColorIcon}" />
 

@@ -70,6 +70,7 @@
     <BundleResource Include="Resources\ProductSans-Bold.ttf" />
     <BundleResource Include="Resources\ProductSans-BoldItalic.ttf" />
     <BundleResource Include="Resources\materialdesignicons-webfont.ttf" />
+    <BundleResource Include="Resources\CustomIconFont.ttf" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

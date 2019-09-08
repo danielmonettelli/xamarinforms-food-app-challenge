@@ -41,6 +41,7 @@
 		<string>ProductSans-Italic.ttf</string>
 		<string>ProductSans-Regular.ttf</string>
         <string>materialdesignicons-webfont.ttf</string>
+        <string>CustomIconFont.ttf</string>
 	</array>
 </dict>
 </plist>
