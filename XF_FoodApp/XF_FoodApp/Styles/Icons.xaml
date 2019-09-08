@@ -11,8 +11,8 @@
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <OnPlatform x:Key="MaterialFont"
                 x:TypeArguments="x:String"
-                Android="materialdesignicons-webfont.ttf#materialdesignicons"
-                iOS="materialdesignicons-webfont" />
+                Android="materialdesignicons-webfont.ttf#Material Design Icons"
+                iOS="Material Design Icons" />
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     
     <!-- CUSTOM ICONS FONT WITH IconMoon -->
@@ -62,7 +62,7 @@
 
     <!-- PLATFORMS IN FontImageSource-->
     <!--=====================================================================-->
-    <FontImageSource x:Key="IconDemo"
+    <FontImageSource x:Key="OnFIconDemo"
                      FontFamily="{StaticResource MaterialFont}"
                      Glyph="{StaticResource OnStringIcon}"
                      Size="{StaticResource OnSizeIcon}"
@@ -70,37 +70,30 @@
     <!--=====================================================================-->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-
+    <!-- FontImageSource TABS -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <FontImageSource x:Key="IconDemo2"
+    <FontImageSource x:Key="icon_tab_explore"
                      FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_checked2}"
-                     Size="{StaticResource TabSizeIcon}"
-                     Color="{StaticResource TabColorIcon}" />
+                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_explore}"/>
 
-    <FontImageSource x:Key="IconDemo3"
-                     FontFamily="{StaticResource MaterialFont}"
-                     Glyph="{x:Static MaterialFont:IconFont.AccessPointNetwork}"
-                     Size="{StaticResource TabSizeIcon}"
-                     Color="{StaticResource TabColorIcon}" />
+    <FontImageSource x:Key="icon_tab_order"
+                     FontFamily="{StaticResource CustomIconFont}"
+                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_order}"/>
 
-    <FontImageSource x:Key="IconDemo4"
-                     FontFamily="{StaticResource MaterialFont}"
-                     Glyph="{x:Static MaterialFont:IconFont.Microsoft}"
-                     Size="{StaticResource TabSizeIcon}"
-                     Color="{StaticResource TabColorIcon}" />
+    <FontImageSource x:Key="icon_tab_favorite"
+                     FontFamily="{StaticResource CustomIconFont}"
+                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_favorite}"/>
 
-    <FontImageSource x:Key="IconDemo5"
-                     FontFamily="{StaticResource MaterialFont}"
-                     Glyph="{x:Static MaterialFont:IconFont.Linkedin}"
-                     Size="{StaticResource TabSizeIcon}"
-                     Color="{StaticResource TabColorIcon}" />
-
-    <FontImageSource x:Key="IconDemo6"
-                     FontFamily="{StaticResource MaterialFont}"
-                     Glyph="{x:Static MaterialFont:IconFont.Check}"
-                     Size="{StaticResource TabSizeIcon}"
-                     Color="{StaticResource TabColorIcon}" />
+    <FontImageSource x:Key="icon_tab_profile"
+                     FontFamily="{StaticResource CustomIconFont}"
+                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_profile}"/>
+ 
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+      
+    <FontImageSource x:Key="IconDemo1"
+                     FontFamily="{StaticResource CustomIconFont}"
+                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_add}"
+                     Size="{StaticResource TabSizeIcon}"
+                     Color="{StaticResource TabColorIcon}" />
 </ResourceDictionary>

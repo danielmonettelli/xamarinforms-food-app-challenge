@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -107,7 +106,7 @@
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\XF_FoodApp\XF_FoodApp.csproj">
-      <Project>{BA267BAC-1FD0-4300-B325-A1A53849F5A6}</Project>
+      <Project>{E1FCE674-2E21-453D-9542-8E2695DCC52F}</Project>
       <Name>XF_FoodApp</Name>
     </ProjectReference>
   </ItemGroup>
