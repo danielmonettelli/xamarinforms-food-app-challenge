@@ -4,12 +4,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:MaterialFont="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
+             xmlns:FontAwesome="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
              mc:Ignorable="d">
 
     <!-- MATERIAL ICONS FONT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <OnPlatform x:Key="MaterialFont"
+    <OnPlatform x:Key="MaterialIconFont"
                 x:TypeArguments="x:String"
                 Android="materialdesignicons-webfont.ttf#Material Design Icons"
                 iOS="Material Design Icons" />
@@ -43,8 +43,8 @@
     <!--=====================================================================-->
     <OnPlatform x:Key="OnStringIcon"
                 x:TypeArguments="x:String"
-                Android="{x:Static MaterialFont:IconFont.AccessPoint}"
-                iOS="{x:Static MaterialFont:IconFont.Cached}" />
+                Android="{x:Static FontAwesome:IconFont.AccessPoint}"
+                iOS="{x:Static FontAwesome:IconFont.Cached}" />
     <!--=====================================================================-->
 
     <!-- PLATFORMS COLOR ICONS FONT -->
@@ -66,7 +66,7 @@
     <!-- PLATFORMS IN FontImageSource-->
     <!--=====================================================================-->
     <FontImageSource x:Key="OnFIconDemo"
-                     FontFamily="{StaticResource MaterialFont}"
+                     FontFamily="{StaticResource MaterialIconFont}"
                      Glyph="{StaticResource OnStringIcon}"
                      Size="{StaticResource OnSizeIcon}"
                      Color="{StaticResource OnColorIcon}" />
@@ -78,19 +78,19 @@
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <FontImageSource x:Key="icon_tab_explore"
                      FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_explore}"/>
+                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_explore}"/>
 
     <FontImageSource x:Key="icon_tab_order"
                      FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_order}"/>
+                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_order}"/>
 
     <FontImageSource x:Key="icon_tab_favorite"
                      FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_favorite}"/>
+                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_favorite}"/>
 
     <FontImageSource x:Key="icon_tab_profile"
                      FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_profile}"/>
+                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_profile}"/>
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
@@ -98,7 +98,7 @@
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <FontImageSource x:Key="IconDemo1"
                      FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_visa}"
+                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_visa}"
                      Size="{StaticResource TabSizeIcon}"
                      Color="{StaticResource TabColorIcon}" />
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->

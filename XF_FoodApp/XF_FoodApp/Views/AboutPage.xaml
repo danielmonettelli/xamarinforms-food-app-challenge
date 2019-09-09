@@ -12,14 +12,14 @@
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
 
-    <Grid Style="{StaticResource GridSpacing}">
+    <Grid Style="{StaticResource GridMasterSpace}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0"
                     Orientation="Vertical">
             <StackLayout >
-                <Label Text="MyDemo" Style="{StaticResource TxtBtnSubTit_Prim}"/>
+                <Label Text="MyDemo" Style="{StaticResource TxtHeadLine_Prim}"/>
                 <Image Source="{StaticResource IconDemo1}"/>
                 <Image Source="{StaticResource IconDemo1}"
                        BackgroundColor="green"/>

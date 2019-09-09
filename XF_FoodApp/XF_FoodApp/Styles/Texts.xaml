@@ -86,11 +86,5 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
     </Style>
-
-    <Style x:Key="TxtEnt1Tit_Prim" TargetType="Button">
-        <Setter Property="TextColor" Value="{DynamicResource colTxtTer}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
-        <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
-    </Style>
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 </ResourceDictionary>
