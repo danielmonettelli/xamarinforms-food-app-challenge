@@ -8,21 +8,25 @@
 
     <!-- FONTSFAMILY [ProductSans] -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- Bold -->
     <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont_ProductSans">
         <On Platform="Android" Value="FontsFamily/ProductSans-Bold.ttf#ProductSans"/>
         <On Platform="iOS" Value="ProductSans-Bold" />
     </OnPlatform>
-
+    
+    <!-- ItalicBold -->
     <OnPlatform x:TypeArguments="x:String" x:Key="BoldItalicFont_ProductSans">
         <On Platform="Android" Value="FontsFamily/ProductSans-BoldItalic.ttf#ProductSans"/>
         <On Platform="iOS" Value="ProductSans-BoldItalic" />
     </OnPlatform>
-
+    
+    <!-- Italic -->
     <OnPlatform x:TypeArguments="x:String" x:Key="ItalicFont_ProductSans">
         <On Platform="Android" Value="FontsFamily/ProductSans-Italic.ttf#ProductSans"/>
         <On Platform="iOS" Value="ProductSans-Italic" />
     </OnPlatform>
 
+    <!-- Regular -->
     <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont_ProductSans">
         <On Platform="Android" Value="FontsFamily/ProductSans-Regular.ttf#ProductSans"/>
         <On Platform="iOS" Value="ProductSans-Regular" />
@@ -32,61 +36,61 @@
 
     <!-- TEXT SIZE [MATERIAL DESIGN] -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- H1-Light -->
+    <x:Double x:Key="TxtSizeH1_96">96</x:Double>
+    <!-- H2-Light -->
+    <x:Double x:Key="TxtSizeH2_60">60</x:Double>
     <!-- H3-Regular -->
-    <x:Double x:Key="TxtSizeH3">48</x:Double>
+    <x:Double x:Key="TxtSizeH3_48">48</x:Double>
     <!-- H4-Regular -->
-    <x:Double x:Key="TxtSizeH4">34</x:Double>
+    <x:Double x:Key="TxtSizeH4_34">34</x:Double>
     <!-- H5-Regular -->
-    <x:Double x:Key="TxtSizeH5">24</x:Double>
+    <x:Double x:Key="TxtSizeH5_24">24</x:Double>
     <!-- H6-Medium, (Bold) -->
-    <x:Double x:Key="TxtSizeH6">20</x:Double>
+    <x:Double x:Key="TxtSizeH6_20">20</x:Double>
     <!-- Title-Medium, (Bold) -->
-    <x:Double x:Key="TxtSizeTit">18</x:Double>
+    <x:Double x:Key="TxtSizeTit_18">18</x:Double>
     <!-- SubTitle1-Regular, (Bold) -->
-    <x:Double x:Key="TxtSizeSubTit1">16</x:Double>
+    <x:Double x:Key="TxtSizeSubTit1_16">16</x:Double>
     <!-- SubTitle2-Medium, (Bold) -->
-    <x:Double x:Key="TxtSizeSubTit2">14</x:Double>
+    <x:Double x:Key="TxtSizeSubTit2_14">14</x:Double>
     <!-- Body1-Regular -->
-    <x:Double x:Key="TxtSizeBod1">16</x:Double>
+    <x:Double x:Key="TxtSizeBod1_16">16</x:Double>
     <!-- Body2-Regular -->
-    <x:Double x:Key="TxtSizeBod2">14</x:Double>
+    <x:Double x:Key="TxtSizeBod2_14">14</x:Double>
+    <!-- Button-Medium, (Bold) -->
+    <x:Double x:Key="TxtSizeBtn_14">14</x:Double>
     <!-- Caption-Regular -->
-    <x:Double x:Key="TxtSizeCap">12</x:Double>
+    <x:Double x:Key="TxtSizeCap_12">12</x:Double>
     <!-- Overline-Regular -->
-    <x:Double x:Key="TxtSizeOver">10</x:Double>
+    <x:Double x:Key="TxtSizeOver_10">10</x:Double>
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
     <!-- STYLES TEXT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <Style x:Key="TxtTit_Prim" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource colAccentCheck}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit}" />
-        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
-    </Style>
-
-    <Style x:Key="TxtTit_Sec" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit}" />
-        <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
-    </Style>
-
     <Style x:Key="TxtHeadLine_Prim" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeH4}" />
+        <Setter Property="TextColor" Value="{DynamicResource colTxtPrim}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeH4_34}" />
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
     </Style>
 
-    <Style x:Key="TxtBtnSubTit_Prim" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit1}" />
-        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
+    <Style x:Key="TxtTitle_Prim" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colTxtComb23}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
     </Style>
 
-    <Style x:Key="TxtBtnSubTit_Sec" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource TabColorIcon}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit2}" />
-        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}"/>
+    <Style x:Key="TxtEnt1Tit_Prim" TargetType="Entry">
+        <Setter Property="TextColor" Value="{DynamicResource colTxtEnt1}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
+    </Style>
+
+    <Style x:Key="TxtEnt1Tit_Prim" TargetType="Button">
+        <Setter Property="TextColor" Value="{DynamicResource colTxtTer}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}"/>
     </Style>
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 </ResourceDictionary>

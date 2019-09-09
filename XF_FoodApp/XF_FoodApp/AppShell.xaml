@@ -23,12 +23,12 @@
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource NavigationPrimary}"/>
             </Style>
-            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
 
     <!-- Your Pages -->
-    <TabBar Style="{StaticResource BaseStyle}">
+    <TabBar>
     
         <Tab Title="Explore" Icon="{StaticResource icon_tab_explore}">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />

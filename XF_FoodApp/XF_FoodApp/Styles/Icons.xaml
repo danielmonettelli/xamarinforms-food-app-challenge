@@ -94,7 +94,7 @@
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
-    <!-- FontImageSource TABS -->
+    <!-- FontImageSource INTERFACES -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <FontImageSource x:Key="IconDemo1"
                      FontFamily="{StaticResource CustomIconFont}"
