@@ -18,9 +18,7 @@
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0"
                     Orientation="Vertical">
-            <StackLayout
-                     Orientation="Vertical"
-                Spacing="0">
+            <StackLayout >
                 <Label Text="MyDemo" Style="{StaticResource TxtTit_Prim}"/>
                 <Image Source="{StaticResource IconDemo1}"/>
                 <Image Source="{StaticResource IconDemo1}"

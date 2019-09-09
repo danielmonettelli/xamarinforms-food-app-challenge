@@ -27,9 +27,9 @@ namespace XF_FoodApp.Styles
         public const string icon_spaguetti = "\ue912";
         public const string icon_star = "\ue913";
         public const string icon_tab_explore = "\ue914";
-        public const string icon_visa = "\ue918";
-        public const string icon_tab_profile = "\ue917";
-        public const string icon_tab_order = "\ue916";
         public const string icon_tab_favorite = "\ue915";
+        public const string icon_tab_order = "\ue916";
+        public const string icon_tab_profile = "\ue917";
+        public const string icon_visa = "\ue918";
     }
 }

@@ -6,18 +6,30 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
     
-    <OnPlatform x:TypeArguments="Thickness" x:Key="spaceSmall">
+    <!-- TYPES OF SPACES-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <OnPlatform x:TypeArguments="Thickness" x:Key="idealSpace">
         <On Platform="Android" Value="16,0"/>
         <On Platform="iOS" Value="18,0"/>
     </OnPlatform>
-    
-    
-    <Style TargetType="Grid" x:Key="GridSpacing">
+
+    <OnPlatform x:TypeArguments="Thickness" x:Key="mediumSpace">
+        <On Platform="Android" Value="20,0"/>
+        <On Platform="iOS" Value="22,0"/>
+    </OnPlatform>
+
+    <OnPlatform x:TypeArguments="Thickness" x:Key="bigSpace">
+        <On Platform="Android" Value="32,0"/>
+        <On Platform="iOS" Value="34,0"/>
+    </OnPlatform>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+    <Style TargetType="Grid" x:Key="GridMasterSpace">
 
         <Setter Property="RowSpacing" Value="0"/>
         <Setter Property="ColumnSpacing" Value="0"/>
-
-        <Setter Property="Padding" Value="{StaticResource spaceSmall}"/>
+        <Setter Property="Padding" Value="{StaticResource idealSpace}"/>
 
     </Style>
 

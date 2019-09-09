@@ -15,6 +15,7 @@
                 iOS="Material Design Icons" />
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     
+    
     <!-- CUSTOM ICONS FONT WITH IconMoon -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <OnPlatform x:Key="CustomIconFont"
@@ -23,10 +24,12 @@
                 iOS="CustomIconFont" />
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     
+    
     <!-- COLOR ICONS FONT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <Color x:Key="TabColorIcon">#BABEC6</Color>
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
     
     <!-- SIZE ICONS FONT -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -70,6 +73,7 @@
     <!--=====================================================================-->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+    
     <!-- FontImageSource TABS -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <FontImageSource x:Key="icon_tab_explore"
@@ -87,13 +91,15 @@
     <FontImageSource x:Key="icon_tab_profile"
                      FontFamily="{StaticResource CustomIconFont}"
                      Glyph="{x:Static MaterialFont:CustomIconFont.icon_tab_profile}"/>
- 
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-      
+
+    <!-- FontImageSource TABS -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <FontImageSource x:Key="IconDemo1"
                      FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_add}"
+                     Glyph="{x:Static MaterialFont:CustomIconFont.icon_visa}"
                      Size="{StaticResource TabSizeIcon}"
                      Color="{StaticResource TabColorIcon}" />
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 </ResourceDictionary>
