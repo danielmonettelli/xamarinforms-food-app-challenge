@@ -19,7 +19,9 @@
         <ScrollView Grid.Row="0"
                     Orientation="Vertical">
             <StackLayout >
-                <Label Text="MyDemo" Style="{StaticResource txtSubTit2_2}"/>
+                <Label Text="MyDemo" Style="{StaticResource TxtSubTit1_2}"/>
+                <Button Text="jj" Style="{StaticResource Button_5}"
+                        Visual="Material"/>
                 <Image Source="{StaticResource IconDemo1}"/>
                 <Image Source="{StaticResource IconDemo1}"
                        BackgroundColor="green"/>

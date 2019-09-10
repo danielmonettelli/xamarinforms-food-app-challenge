@@ -12,15 +12,4 @@
         <ResourceDictionary Source="Spaces.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-
-    <!-- STYLES WelcomePage-->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <Style TargetType="Button" x:Key="btn1Welcome">
-        <Setter Property="FontSize" Value="14"/> 
-        <Setter Property="TextColor" Value="Green"/>
-        <Setter Property="BackgroundColor" Value="Transparent"/>
-        <Setter Property="CornerRadius" Value="15"/>
-    </Style>
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
 </ResourceDictionary>
