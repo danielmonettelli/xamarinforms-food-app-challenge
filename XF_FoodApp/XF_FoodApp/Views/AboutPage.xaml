@@ -6,28 +6,24 @@
              mc:Ignorable="d"
              x:Class="XF_FoodApp.Views.AboutPage"
              xmlns:vm="clr-namespace:XF_FoodApp.ViewModels"
-             BackgroundColor="black"
              Title="{Binding Title}">
 
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
 
-    <Grid Style="{StaticResource GridBigSpace}">
+    <Grid Style="{StaticResource GridMasterSpace}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0"
                     Orientation="Vertical">
             <StackLayout >
-                <Label Text="MyDemo" Style="{StaticResource txtBody2_3}"/>
-                <Entry Text="hola" Style="{StaticResource TxtEntTitle_2}"/>
-                <Button Text="Hola" Style="{StaticResource Button_5}"/>
+                <Label Text="MyDemo" Style="{StaticResource TxtHeadLine_Prim}"/>
                 <Image Source="{StaticResource IconDemo1}"/>
                 <Image Source="{StaticResource IconDemo1}"
                        BackgroundColor="green"/>
-                <Image Source="{StaticResource IconDemo1}"
-                       BackgroundColor="red"/>
+                <Image Source="{StaticResource IconDemo1}"/>
                 <Image Source="{StaticResource IconDemo1}"/>
             </StackLayout>
             
