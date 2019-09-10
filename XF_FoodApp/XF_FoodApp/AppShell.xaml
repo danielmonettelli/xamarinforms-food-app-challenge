@@ -31,7 +31,7 @@
     <TabBar>
     
         <Tab Title="Explore" Icon="{StaticResource icon_tab_explore}">
-            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:Discover}" />
         </Tab>
         <Tab Title="My order" Icon="{StaticResource icon_tab_order}">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />

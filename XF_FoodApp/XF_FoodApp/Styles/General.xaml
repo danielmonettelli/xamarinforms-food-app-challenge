@@ -2,6 +2,7 @@
 <?xaml-comp compile="true" ?>
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
@@ -12,4 +13,12 @@
         <ResourceDictionary Source="Spaces.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
+
+    <!-- Xamarin.Forms.DebugRainbows -->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+        <Setter Property="rainbows:DebugRainbow.IsDebug" Value="True" />
+    </Style>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
 </ResourceDictionary>
