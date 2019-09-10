@@ -5,7 +5,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
-    
+
     <!-- TYPES OF SPACES-->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <OnPlatform x:TypeArguments="Thickness" x:Key="idealSpace">
@@ -25,12 +25,32 @@
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
-    <Style TargetType="Grid" x:Key="GridMasterSpace">
-
-        <Setter Property="RowSpacing" Value="0"/>
-        <Setter Property="ColumnSpacing" Value="0"/>
+    <!-- SPACES Grid-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <Style TargetType="Grid" x:Key="GridIdealSpace">
         <Setter Property="Padding" Value="{StaticResource idealSpace}"/>
-
     </Style>
+
+    <Style TargetType="Grid" x:Key="GridMediumSpace">
+        <Setter Property="Padding" Value="{StaticResource mediumSpace}"/>
+    </Style>
+
+    <Style TargetType="Grid" x:Key="GridBigSpace">
+        <Setter Property="Padding" Value="{StaticResource bigSpace}"/>
+    </Style>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+
+    <!-- SPACES BASE-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <Style TargetType="Grid">
+        <Setter Property="RowSpacing" Value="0" />
+        <Setter Property="ColumnSpacing" Value="0" />
+    </Style>
+
+    <Style TargetType="StackLayout">
+        <Setter Property="Spacing" Value="0" />
+    </Style>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 </ResourceDictionary>
