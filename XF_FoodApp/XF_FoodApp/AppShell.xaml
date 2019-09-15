@@ -1,51 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
-       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-       mc:Ignorable="d"
-       xmlns:local="clr-namespace:XF_FoodApp.Views"
-       FlyoutBehavior="Locked"
-       Title="XF_FoodApp"
-       x:Class="XF_FoodApp.AppShell"
-       Visual="Material">
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="XF_FoodApp.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:XF_FoodApp.Views"
+    Title="XF_FoodApp"
+    FlyoutBehavior="Locked"
+    Visual="Material"
+    mc:Ignorable="d">
 
-    <!-- 
-        Styles and Resources 
+    <!--
+        Styles and Resources
     -->
     <Shell.Resources>
         <ResourceDictionary>
             <Color x:Key="NavigationPrimary">#DFC625</Color>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource colQua}" />
                 <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="White"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource NavigationPrimary}"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
             </Style>
-            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
         </ResourceDictionary>
     </Shell.Resources>
 
-    <!-- Your Pages -->
+    <!--  Your Pages  -->
     <TabBar>
-    
+
         <Tab Title="Explore" Icon="{StaticResource icon_tab_explore}">
-            <ShellContent ContentTemplate="{DataTemplate local:Discover}" />
+            <ShellContent ContentTemplate="{DataTemplate view:Discover}" />
         </Tab>
         <Tab Title="My order" Icon="{StaticResource icon_tab_order}">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+            <ShellContent ContentTemplate="{DataTemplate view:Discover}" />
         </Tab>
         <Tab Title="Favourite" Icon="{StaticResource icon_tab_favorite}">
-            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+            <ShellContent ContentTemplate="{DataTemplate view:Favourite}" />
         </Tab>
         <Tab Title="Profile" Icon="{StaticResource icon_tab_profile}">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+            <ShellContent ContentTemplate="{DataTemplate view:Discover}" />
         </Tab>
-        
+
     </TabBar>
 
-    <!-- Optional Templates 
+    <!-- Optional Templates
     // These may be provided inline as below or as separate classes.
 
     // This header appears at the top of the Flyout.

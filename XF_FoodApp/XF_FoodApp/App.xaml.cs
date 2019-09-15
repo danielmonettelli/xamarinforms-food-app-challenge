@@ -13,7 +13,7 @@ namespace XF_FoodApp
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            DependencyService.Register<MainService>();
             MainPage = new AppShell();
         }
 

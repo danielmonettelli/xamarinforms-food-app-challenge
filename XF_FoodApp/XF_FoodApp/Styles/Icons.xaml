@@ -1,105 +1,166 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <?xaml-comp compile="true" ?>
-<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:FontAwesome="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
-             mc:Ignorable="d">
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:FontAwesome="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
 
-    <!-- MATERIAL ICONS FONT -->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <OnPlatform x:Key="MaterialIconFont"
-                x:TypeArguments="x:String"
-                Android="materialdesignicons-webfont.ttf#Material Design Icons"
-                iOS="Material Design Icons" />
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    
-    
-    <!-- CUSTOM ICONS FONT WITH IconMoon -->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <OnPlatform x:Key="CustomIconFont"
-                x:TypeArguments="x:String"
-                Android="CustomIconFont.ttf#CustomIconFont"
-                iOS="CustomIconFont" />
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    
-    
-    <!-- COLOR ICONS FONT -->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--  MATERIAL ICONS FONT  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <OnPlatform
+        x:Key="MaterialIconFont"
+        x:TypeArguments="x:String"
+        Android="materialdesignicons-webfont.ttf#Material Design Icons"
+        iOS="Material Design Icons" />
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+
+    <!--  CUSTOM ICONS FONT WITH IconMoon  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <OnPlatform
+        x:Key="CustomIconFont"
+        x:TypeArguments="x:String"
+        Android="CustomIconFont.ttf#CustomIconFont"
+        iOS="CustomIconFont" />
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+
+    <!--  COLOR ICONS FONT  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <Color x:Key="TabColorIcon">#BABEC6</Color>
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    
-    
-    <!-- SIZE ICONS FONT -->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+
+    <!--  SIZE ICONS FONT  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <x:Double x:Key="TabSizeIcon">140</x:Double>
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    
-    
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> OPTIONAL <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <!-- PLATFORMS CHANGE ICONS FONT FOR Glyph -->
-    <!--=====================================================================-->
-    <OnPlatform x:Key="OnStringIcon"
-                x:TypeArguments="x:String"
-                Android="{x:Static FontAwesome:IconFont.AccessPoint}"
-                iOS="{x:Static FontAwesome:IconFont.Cached}" />
-    <!--=====================================================================-->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--  PLATFORMS CHANGE ICONS FONT FOR Glyph  -->
+    <!--  =====================================================================  -->
+    <OnPlatform
+        x:Key="OnStringIcon"
+        x:TypeArguments="x:String"
+        Android="{x:Static FontAwesome:IconFont.AccessPoint}"
+        iOS="{x:Static FontAwesome:IconFont.Cached}" />
+    <!--  =====================================================================  -->
 
-    <!-- PLATFORMS COLOR ICONS FONT -->
-    <!--=====================================================================-->
-    <OnPlatform x:Key="OnColorIcon"
-                x:TypeArguments="Color"
-                Android="#17D47E"
-                iOS="#EA29E2" />
-    <!--=====================================================================-->
+    <!--  PLATFORMS COLOR ICONS FONT  -->
+    <!--  =====================================================================  -->
+    <OnPlatform
+        x:Key="OnColorIcon"
+        x:TypeArguments="Color"
+        Android="#17D47E"
+        iOS="#EA29E2" />
+    <!--  =====================================================================  -->
 
-    <!-- PLATFORMS SIZE ICONS FONT -->
-    <!--=====================================================================-->
-    <OnPlatform x:Key="OnSizeIcon"
-                x:TypeArguments="x:Double"
-                Android="200"
-                iOS="30" />
-    <!--=====================================================================-->
+    <!--  PLATFORMS SIZE ICONS FONT  -->
+    <!--  =====================================================================  -->
+    <OnPlatform
+        x:Key="OnSizeIcon"
+        x:TypeArguments="x:Double"
+        Android="200"
+        iOS="30" />
+    <!--  =====================================================================  -->
 
-    <!-- PLATFORMS IN FontImageSource-->
-    <!--=====================================================================-->
-    <FontImageSource x:Key="OnFIconDemo"
-                     FontFamily="{StaticResource MaterialIconFont}"
-                     Glyph="{StaticResource OnStringIcon}"
-                     Size="{StaticResource OnSizeIcon}"
-                     Color="{StaticResource OnColorIcon}" />
-    <!--=====================================================================-->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
-    
-    <!-- FontImageSource TABS -->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <FontImageSource x:Key="icon_tab_explore"
-                     FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_explore}"/>
-
-    <FontImageSource x:Key="icon_tab_order"
-                     FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_order}"/>
-
-    <FontImageSource x:Key="icon_tab_favorite"
-                     FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_favorite}"/>
-
-    <FontImageSource x:Key="icon_tab_profile"
-                     FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_profile}"/>
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--  PLATFORMS IN FontImageSource  -->
+    <!--  =====================================================================  -->
+    <FontImageSource
+        x:Key="OnFIconDemo"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{StaticResource OnStringIcon}"
+        Size="{StaticResource OnSizeIcon}"
+        Color="{StaticResource OnColorIcon}" />
+    <!--  =====================================================================  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
 
-    <!-- FontImageSource INTERFACES -->
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <FontImageSource x:Key="IconDemo1"
-                     FontFamily="{StaticResource CustomIconFont}"
-                     Glyph="{x:Static FontAwesome:CustomIconFont.icon_visa}"
-                     Size="{StaticResource TabSizeIcon}"
-                     Color="{StaticResource TabColorIcon}" />
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--  FontImageSource TABS  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <FontImageSource
+        x:Key="icon_tab_explore"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_explore}" />
+
+    <FontImageSource
+        x:Key="icon_tab_order"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_order}" />
+
+    <FontImageSource
+        x:Key="icon_tab_favorite"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_favorite}" />
+
+    <FontImageSource
+        x:Key="icon_tab_profile"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_profile}" />
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+
+    <!--  FontImageSource INTERFACES  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <FontImageSource
+        x:Key="icon_filtering"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_filtering}"
+        Size="42"
+        Color="#C7CAD1" />
+
+    <FontImageSource
+        x:Key="icon_star"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_star}"
+        Size="12"
+        Color="#FDC900" />
+
+    <FontImageSource
+        x:Key="icon_pizza"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_pizza}"
+        Size="44"
+        Color="#FE8C01" />
+
+    <FontImageSource
+        x:Key="icon_hamburger"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_hamburger}"
+        Size="44"
+        Color="#5AC7FB" />
+
+    <FontImageSource
+        x:Key="icon_meat"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_meat}"
+        Size="44"
+        Color="#FF2D55" />
+
+    <FontImageSource
+        x:Key="icon_spaguetti"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_spaguetti}"
+        Size="44"
+        Color="#5754D6" />
+
+    <FontImageSource
+        x:Key="icon_bookmark1"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_bookmark1}"
+        Size="23"
+        Color="#B9BDC5" />
+
+    <FontImageSource
+        x:Key="icon_location"
+        FontFamily="{StaticResource CustomIconFont}"
+        Glyph="{x:Static FontAwesome:CustomIconFont.icon_location}"
+        Size="14"
+        Color="#B9BDC5" />
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 </ResourceDictionary>

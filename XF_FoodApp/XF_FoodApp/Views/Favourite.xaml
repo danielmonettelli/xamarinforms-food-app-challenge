@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XF_FoodApp.Views.Favourite"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:XF_FoodApp.ViewModels"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:DiscoverViewModel />
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Content>
+        <Grid>
+            <BoxView BackgroundColor="{StaticResource colBG1}" />
+
+
+            <Grid>
+
+                <StackLayout>
+                    <CollectionView
+                        ItemsSource="{Binding ListRestaurant}"
+                        SelectionMode="Single">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame
+                                    Padding="16,8"
+                                    BackgroundColor="{StaticResource colBG1}"
+                                    HasShadow="False">
+                                    <Frame
+                                        Padding="16"
+                                        BackgroundColor="{StaticResource colQua}"
+                                        CornerRadius="8"
+                                        Visual="Material"
+                                        HasShadow="True">
+                                        <StackLayout
+                                            Orientation="Horizontal"
+                                            Spacing="16">
+                                            <Frame
+                                                Padding="0"
+                                                Visual="Material"
+                                                CornerRadius="6">
+                                                <Image
+                                                    Source="{Binding Image_Restaurant}"
+                                                    Aspect="AspectFill"
+                                                    HeightRequest="98"
+                                                    WidthRequest="98" />
+                                            </Frame>
+                                            <StackLayout
+                                                HorizontalOptions="FillAndExpand"
+                                                Orientation="Vertical"
+                                                VerticalOptions="Center"
+                                                Spacing="4">
+
+                                                <StackLayout
+                                                    Orientation="Horizontal"
+                                                    Spacing="55">
+                                                    <Label
+                                                        Text="{Binding Title_Restaurant}"
+                                                        Style="{StaticResource TxtTitle_1}"
+                                                        LineBreakMode="TailTruncation"
+                                                        MaxLines="2" />
+                                                    <Image
+                                                        Source="{StaticResource icon_bookmark1}"
+                                                        HorizontalOptions="EndAndExpand"
+                                                        VerticalOptions="Start" />
+                                                </StackLayout>
+
+                                                <StackLayout
+                                                    Margin="0,0,0,12"
+                                                    Orientation="Horizontal"
+                                                    Spacing="5">
+                                                    <Image
+                                                        Margin="0,-4,0,0"
+                                                        Source="{StaticResource icon_location}" />
+                                                    <Label
+                                                        Text="{Binding Place_Restaurant}"
+                                                        Style="{StaticResource TxtSubTit2_1}"
+                                                        LineBreakMode="TailTruncation" />
+                                                </StackLayout>
+
+                                                <StackLayout
+                                                    Orientation="Horizontal"
+                                                    Spacing="2.2">
+                                                    <Image
+                                                        Margin="0,-4,2,0"
+                                                        Source="{StaticResource icon_star}" />
+                                                    <Label
+                                                        Text="{Binding Rating1_Restaurant}"
+                                                        Style="{StaticResource TxtSubTit2_2}"
+                                                        LineBreakMode="TailTruncation" />
+                                                    <Label
+                                                        Text="{Binding Rating2_Restaurant}"
+                                                        Style="{StaticResource TxtSubTit2_1}"
+                                                        LineBreakMode="TailTruncation" />
+                                                </StackLayout>
+                                            </StackLayout>
+
+                                        </StackLayout>
+                                    </Frame>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

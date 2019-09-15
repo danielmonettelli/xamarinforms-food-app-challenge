@@ -10,13 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace XF_FoodApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Discover : ContentPage
+    public partial class Favourite : ContentPage
     {
-        public Discover()
+        public Favourite()
         {
             InitializeComponent();
-
-           
         }
     }
 }
