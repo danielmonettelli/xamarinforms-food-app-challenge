@@ -55,7 +55,7 @@
                                             <StackLayout
                                                 HorizontalOptions="FillAndExpand"
                                                 Orientation="Vertical"
-                                                VerticalOptions="Center"
+                                                VerticalOptions="FillAndExpand"
                                                 Spacing="4">
 
                                                 <StackLayout
