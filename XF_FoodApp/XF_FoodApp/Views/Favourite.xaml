@@ -6,10 +6,11 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:XF_FoodApp.ViewModels"
+    Title="Favourite"
     mc:Ignorable="d">
 
     <ContentPage.BindingContext>
-        <vm:DiscoverViewModel />
+        <vm:MainViewModel />
     </ContentPage.BindingContext>
 
 
@@ -77,16 +78,19 @@
                                                     Orientation="Horizontal"
                                                     Spacing="5">
                                                     <Image
-                                                        Margin="0,-4,0,0"
-                                                        Source="{StaticResource icon_location}" />
+                                                        Margin="0,-1,0,0"
+                                                        Source="{StaticResource icon_location}"
+                                                        VerticalOptions="Start" />
                                                     <Label
                                                         Text="{Binding Place_Restaurant}"
                                                         Style="{StaticResource TxtSubTit2_1}"
+                                                        MaxLines="3"
                                                         LineBreakMode="TailTruncation" />
                                                 </StackLayout>
 
                                                 <StackLayout
                                                     Orientation="Horizontal"
+                                                    VerticalOptions="EndAndExpand"
                                                     Spacing="2.2">
                                                     <Image
                                                         Margin="0,-4,2,0"

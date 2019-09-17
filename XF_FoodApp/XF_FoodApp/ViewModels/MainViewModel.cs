@@ -10,7 +10,7 @@ using XF_FoodApp.Services;
 
 namespace XF_FoodApp.ViewModels
 {
-    public class DiscoverViewModel : BindableObject
+    public class MainViewModel : BindableObject
     {
 
         #region Properties
@@ -37,11 +37,23 @@ namespace XF_FoodApp.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        private List<Food> _listFood;
+
+        public List<Food> ListFood
+        {
+            get { return _listFood; }
+            set
+            {
+                _listFood = value;
+                OnPropertyChanged();
+            }
+        }
         #endregion
 
 
         #region Constructors
-        public DiscoverViewModel()
+        public MainViewModel()
         {
             GetService();
         }
@@ -54,6 +66,7 @@ namespace XF_FoodApp.ViewModels
             var service = new MainService();
             ListRestaurant = service.GetRestaurant();
             ListCategory = service.GetCategory();
+            ListFood = service.GetFood();
         }
         #endregion
     }

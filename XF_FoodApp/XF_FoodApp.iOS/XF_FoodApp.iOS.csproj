@@ -400,4 +400,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\bookmark1Icon%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img_profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img_profile%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img_profile%403x.png" />
+  </ItemGroup>
 </Project>

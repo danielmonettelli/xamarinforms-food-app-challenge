@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:view="clr-namespace:XF_FoodApp.Views"
     Title="XF_FoodApp"
-    FlyoutBehavior="Locked"
+    FlyoutBehavior="Disabled"
     Visual="Material"
     mc:Ignorable="d">
 
@@ -16,32 +16,64 @@
     -->
     <Shell.Resources>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#DFC625</Color>
-            <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource colQua}" />
+            <Color x:Key="NavigationPrimary">#FEFEFE</Color>
+            <Style
+                x:Key="BaseStyle"
+                TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource colPrim}" />
                 <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
                 <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
             </Style>
-            <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
+
+            <Style x:Key="BaseStyle1" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.ForegroundColor" Value="{StaticResource colPrim}" />
+                <Setter Property="Shell.TitleColor" Value="{StaticResource colPrim}" />
+                <Setter Property="Shell.UnselectedColor" Value="#FF96969A" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource colPrim}" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
+            </Style>
+            
+            <Style
+                BasedOn="{StaticResource BaseStyle}"
+                TargetType="TabBar" />
         </ResourceDictionary>
     </Shell.Resources>
 
     <!--  Your Pages  -->
     <TabBar>
 
-        <Tab Title="Explore" Icon="{StaticResource icon_tab_explore}">
+        <Tab
+            Title="Explore"
+            Icon="{StaticResource icon_tab_explore}">
             <ShellContent ContentTemplate="{DataTemplate view:Discover}" />
         </Tab>
-        <Tab Title="My order" Icon="{StaticResource icon_tab_order}">
-            <ShellContent ContentTemplate="{DataTemplate view:Discover}" />
+
+        <Tab
+            Title="My order"
+            Icon="{StaticResource icon_tab_order}">
+            <ShellContent
+                Title="Current orders"
+                ContentTemplate="{DataTemplate view:CurrentOrders}" />
+            <ShellContent
+                Title="Past orders"
+                ContentTemplate="{DataTemplate view:PastOrders}" />
         </Tab>
-        <Tab Title="Favourite" Icon="{StaticResource icon_tab_favorite}">
+
+        <Tab
+            Title="Favourite"
+            Icon="{StaticResource icon_tab_favorite}">
             <ShellContent ContentTemplate="{DataTemplate view:Favourite}" />
         </Tab>
-        <Tab Title="Profile" Icon="{StaticResource icon_tab_profile}">
-            <ShellContent ContentTemplate="{DataTemplate view:Discover}" />
+
+        <Tab
+            Title="Profile"
+            Icon="{StaticResource icon_tab_profile}">
+            <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
         </Tab>
 
     </TabBar>

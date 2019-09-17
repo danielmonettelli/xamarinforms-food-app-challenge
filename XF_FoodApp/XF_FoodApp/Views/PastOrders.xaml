@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XF_FoodApp.Views.PastOrders"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:XF_FoodApp.ViewModels"
+    Title="My orders"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid>
+            <BoxView BackgroundColor="{StaticResource colBG1}" />
+
+
+            <Grid>
+
+                <StackLayout>
+                    <CollectionView
+                        ItemsSource="{Binding ListFood}"
+                        SelectionMode="Single">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame
+                                    Padding="16,4"
+                                    BackgroundColor="{StaticResource colBG1}"
+                                    HasShadow="False">
+                                    <Frame
+                                        Padding="8"
+                                        BackgroundColor="{StaticResource colQua}"
+                                        CornerRadius="8"
+                                        Visual="Material"
+                                        HasShadow="True">
+                                        <StackLayout
+                                            Orientation="Horizontal"
+                                            Spacing="16">
+                                            <Frame
+                                                Padding="0"
+                                                Visual="Material"
+                                                CornerRadius="6">
+                                                <Image
+                                                    Source="{Binding Image_Food}"
+                                                    Aspect="AspectFill"
+                                                    HeightRequest="55"
+                                                    WidthRequest="55" />
+                                            </Frame>
+                                            <StackLayout
+                                                HorizontalOptions="FillAndExpand"
+                                                Orientation="Horizontal"
+                                                VerticalOptions="Center"
+                                                Spacing="4">
+
+                                                <StackLayout Spacing="8">
+                                                    <Label
+                                                        Text="{Binding Title_Food}"
+                                                        Style="{StaticResource TxtTitle_1}"
+                                                        LineBreakMode="TailTruncation"
+                                                        MaxLines="2" />
+                                                    <Label
+                                                        Text="Delivered"
+                                                        Style="{StaticResource TxtSubTit1_3}"
+                                                        LineBreakMode="TailTruncation"
+                                                        MaxLines="2" />
+
+                                                </StackLayout>
+                                                <Label
+                                                    Text="{Binding Price_Food}"
+                                                    Style="{StaticResource TxtSubTit1_6}"
+                                                    LineBreakMode="TailTruncation"
+                                                    HorizontalOptions="EndAndExpand"
+                                                    VerticalOptions="Center" />
+                                            </StackLayout>
+
+                                        </StackLayout>
+                                    </Frame>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
