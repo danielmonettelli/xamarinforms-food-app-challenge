@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid
+    x:Class="XF_FoodApp.Views.ShellTemplates.FlyoutHeaderTemplate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Padding="16,39,16,10"
+    mc:Ignorable="d">
+
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="50" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
+        <RowDefinition Height="Auto" />
+
+    </Grid.RowDefinitions>
+
+    <Frame
+        Grid.Row="0"
+        Grid.Column="0"
+        Padding="0"
+        CornerRadius="25"
+        OutlineColor="#FFC5C5C5"
+        HasShadow="False"
+        Visual="Material"
+        HorizontalOptions="Start">
+        <Image
+            HeightRequest="50"
+            WidthRequest="50"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            Aspect="AspectFill"
+            Source="img_profile.png" />
+    </Frame>
+
+
+    <Label
+        Grid.Row="1"
+        Grid.ColumnSpan="2"
+        Text="Luna Fernández E."
+        Style="{StaticResource TxtH6Flyout_1}" />
+
+</Grid>

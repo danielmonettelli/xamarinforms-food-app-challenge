@@ -5,9 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ShellTemplate="clr-namespace:XF_FoodApp.Views.ShellTemplates"
     xmlns:view="clr-namespace:XF_FoodApp.Views"
     Title="XF_FoodApp"
-    FlyoutBehavior="Disabled"
+    FlyoutBackgroundImage="img_bgflyout.png"
+    FlyoutBackgroundImageAspect="AspectFill"
+    FlyoutBehavior="Flyout"
+    FlyoutHeaderTemplate="{DataTemplate ShellTemplate:FlyoutHeaderTemplate}"
+    FlyoutHeaderBehavior="Fixed"
+    ItemTemplate="{DataTemplate ShellTemplate:FlyoutItemTemplate}"
+    MenuItemTemplate="{DataTemplate ShellTemplate:FlyoutMenuItemTemplate}"
     Visual="Material"
     mc:Ignorable="d">
 
@@ -27,7 +34,9 @@
                 <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
             </Style>
 
-            <Style x:Key="BaseStyle1" TargetType="Element">
+            <Style
+                x:Key="BaseStyle1"
+                TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.ForegroundColor" Value="{StaticResource colPrim}" />
                 <Setter Property="Shell.TitleColor" Value="{StaticResource colPrim}" />
@@ -37,22 +46,27 @@
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
                 <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
             </Style>
-            
+
             <Style
                 BasedOn="{StaticResource BaseStyle}"
                 TargetType="TabBar" />
+            <Style
+                BasedOn="{StaticResource BaseStyle}"
+                TargetType="FlyoutItem" />
         </ResourceDictionary>
     </Shell.Resources>
 
-    <!--  Your Pages  -->
-    <TabBar>
 
+    <!--  TABS SECTOR  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <TabBar>
+        <!--  Explore Tab  -->
         <Tab
             Title="Explore"
             Icon="{StaticResource icon_tab_explore}">
             <ShellContent ContentTemplate="{DataTemplate view:Discover}" />
         </Tab>
-
+        <!--  My order Tab  -->
         <Tab
             Title="My order"
             Icon="{StaticResource icon_tab_order}">
@@ -63,13 +77,13 @@
                 Title="Past orders"
                 ContentTemplate="{DataTemplate view:PastOrders}" />
         </Tab>
-
+        <!--  Favourite Tab  -->
         <Tab
             Title="Favourite"
             Icon="{StaticResource icon_tab_favorite}">
             <ShellContent ContentTemplate="{DataTemplate view:Favourite}" />
         </Tab>
-
+        <!--  Profile Tab  -->
         <Tab
             Title="Profile"
             Icon="{StaticResource icon_tab_profile}">
@@ -77,35 +91,94 @@
         </Tab>
 
     </TabBar>
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
-    <!-- Optional Templates
-    // These may be provided inline as below or as separate classes.
 
-    // This header appears at the top of the Flyout.
-    <Shell.FlyoutHeaderTemplate>
-	<DataTemplate>
-            <Grid>ContentHere</Grid>
+    <!--  Flyout SECTOR  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <FlyoutItem
+        Title="Main1"
+        FlyoutDisplayOptions="AsMultipleItems">
+        <!--  Search  -->
+        <Tab
+            Title="Search"
+            Icon="{StaticResource icon_fly_search}">
+            <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
+        </Tab>
+        <!--  Shopping List  -->
+        <Tab
+            Title="Shopping List"
+            Icon="{StaticResource icon_fly_basket}">
+            <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
+        </Tab>
+        <!--  Weekly Planning  -->
+        <Tab
+            Title="Weekly Planning"
+            Icon="{StaticResource icon_fly_ticket}">
+            <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
+        </Tab>
+
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Main2"
+        FlyoutDisplayOptions="AsMultipleItems">
+        <!--  Settings  -->
+        <Tab
+            Title="Settings"
+            Icon="{StaticResource icon_fly_settings}">
+            <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
+        </Tab>
+        <!--  Support  -->
+        <Tab
+            Title="Support"
+            Icon="{StaticResource icon_fly_support}">
+            <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
+        </Tab>
+        <!--<Tab Title="About">
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesome}"
+                    Glyph="{x:Static local:IconFont.InfoCircle}"
+                    Size="14"
+                    Color="White" />
+            </Tab.Icon>
+            <ShellContent
+                Title="General"
+                ContentTemplate="{DataTemplate about:IndexPage}" />
+            <ShellContent
+                Title="Contributors"
+                ContentTemplate="{DataTemplate about:GitHubPage}" />
+        </Tab>-->
+
+    </FlyoutItem>
+
+
+    <!--<Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid>
+                <Image Source="img_bgflyout.png"
+                       Aspect="AspectFill"/>
+            </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
-    // ItemTemplate is for ShellItems as displayed in a Flyout
     <Shell.ItemTemplate>
         <DataTemplate>
             <ContentView>
-                Bindable Properties: Title, Icon
+                <Label Text="Hola"
+                       TextColor="Black"/>
             </ContentView>
         </DataTemplate>
     </Shell.ItemTemplate>
 
-    // MenuItemTemplate is for MenuItems as displayed in a Flyout
     <Shell.MenuItemTemplate>
         <DataTemplate>
             <ContentView>
-                Bindable Properties: Text, Icon
             </ContentView>
         </DataTemplate>
-    </Shell.MenuItemTemplate>
+    </Shell.MenuItemTemplate>-->
 
-    -->
+
 
 </Shell>

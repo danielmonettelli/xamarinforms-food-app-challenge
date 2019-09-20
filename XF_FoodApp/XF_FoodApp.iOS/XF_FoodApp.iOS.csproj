@@ -71,6 +71,7 @@
     <BundleResource Include="Resources\ProductSans-BoldItalic.ttf" />
     <BundleResource Include="Resources\materialdesignicons-webfont.ttf" />
     <BundleResource Include="Resources\CustomIconFont.ttf" />
+    <BundleResource Include="Resources\Pacifico-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -408,5 +409,14 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\img_profile%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img_bgflyout%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img_bgflyout%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img_bgflyout.png" />
   </ItemGroup>
 </Project>

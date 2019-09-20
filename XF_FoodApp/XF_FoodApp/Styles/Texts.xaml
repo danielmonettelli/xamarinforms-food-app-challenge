@@ -35,6 +35,16 @@
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
 
+    <!--  FONTSFAMILY [Pacifico]  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--  Regular  -->
+    <OnPlatform x:Key="RegularFont_Pacifico" x:TypeArguments="x:String">
+        <On Platform="Android" Value="FontsFamily/Pacifico-Regular.ttf#Pacifico" />
+        <On Platform="iOS" Value="Pacifico-Regular" />
+    </OnPlatform>
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+    
     <!--  TEXT SIZE [MATERIAL DESIGN]  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <!--  H1-Light  -->
@@ -67,7 +77,22 @@
     <x:Double x:Key="TxtSizeOver_10">10</x:Double>
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
+    <!--  STYLES FLYOUT  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <Style x:Key="TxtH5Flyout_1" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colQua}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeH5_24}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_Pacifico}" />
+    </Style>
 
+    <Style x:Key="TxtH6Flyout_1" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colQua}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeH6_20}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_Pacifico}" />
+    </Style>
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+    
     <!--  STYLES TEXT  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <Style x:Key="TxtHeadline4_1" TargetType="Label">

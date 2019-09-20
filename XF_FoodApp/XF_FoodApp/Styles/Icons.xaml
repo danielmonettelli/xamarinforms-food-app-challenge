@@ -105,6 +105,36 @@
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
 
+    <!--  FontImageSource FLYOUT  -->
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <FontImageSource
+        x:Key="icon_fly_search"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{x:Static FontAwesome:IconFont.Magnify}" />
+
+    <FontImageSource
+        x:Key="icon_fly_basket"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{x:Static FontAwesome:IconFont.Basket}" />
+
+    <FontImageSource
+        x:Key="icon_fly_ticket"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{x:Static FontAwesome:IconFont.TicketConfirmation}" />
+
+    <FontImageSource
+        x:Key="icon_fly_settings"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{x:Static FontAwesome:IconFont.Settings}" />
+
+
+    <FontImageSource
+        x:Key="icon_fly_support"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{x:Static FontAwesome:IconFont.FaceAgent}" />
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    
+
     <!--  FontImageSource INTERFACES  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <FontImageSource
