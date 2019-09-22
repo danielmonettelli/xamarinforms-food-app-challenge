@@ -18,12 +18,20 @@
             <Label
                 Text="Explore restaurants"
                 Style="{StaticResource TxtH6Flyout_1}"
-                VerticalOptions="CenterAndExpand" />
+                VerticalOptions="CenterAndExpand">
+                <Label.HorizontalOptions>
+                     <OnPlatform x:TypeArguments="LayoutOptions"
+                      iOS="EndAndExpand"
+                      Android="StartAndExpand" />
+                </Label.HorizontalOptions>
+            </Label>
+
             <Switch
                 Toggled="Switch_Toggled"
                 OnColor="Black"
                 HorizontalOptions="EndAndExpand"
-                VerticalOptions="CenterAndExpand" />
+                VerticalOptions="CenterAndExpand"
+                Visual="Material"/>
         </StackLayout>
     </Shell.TitleView>
 

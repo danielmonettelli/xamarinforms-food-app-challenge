@@ -26,9 +26,7 @@
     <!--<Shell.FlyoutIcon>
         <FontImageSource
             FontFamily="{StaticResource MaterialIconFont}"
-            Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}"
-            Size="28"
-            Color="White" />
+            Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}"/>
     </Shell.FlyoutIcon>-->
     <!--  +++++++++++++++++++++++++++++++++++++++++++++  -->
 
@@ -40,6 +38,11 @@
         <Style
             x:Key="BaseStyle"
             TargetType="Element">
+            <!-- En iOS esta propiedad cambia el color del FlyoutIcon y los tab superiores seleccionados -->
+             <Setter Property="Shell.ForegroundColor" Value="{DynamicResource colQua}" />
+               <!-- En iOS esta propiedad cambia el color tabs superiores no seleccionados -->
+             <Setter Property="Shell.UnselectedColor" Value="{DynamicResource colTabBarUns}" />
+
             <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
             <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
             <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource colTabBarBack}" />
