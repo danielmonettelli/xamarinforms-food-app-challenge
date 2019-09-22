@@ -108,6 +108,11 @@
     <!--  FontImageSource FLYOUT  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <FontImageSource
+        x:Key="icon_fly_home"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{x:Static FontAwesome:IconFont.Home}" />
+
+    <FontImageSource
         x:Key="icon_fly_search"
         FontFamily="{StaticResource MaterialIconFont}"
         Glyph="{x:Static FontAwesome:IconFont.Magnify}" />
@@ -133,7 +138,7 @@
         FontFamily="{StaticResource MaterialIconFont}"
         Glyph="{x:Static FontAwesome:IconFont.FaceAgent}" />
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    
+
 
     <!--  FontImageSource INTERFACES  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->

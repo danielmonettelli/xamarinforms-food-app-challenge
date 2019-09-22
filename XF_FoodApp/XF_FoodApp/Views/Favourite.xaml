@@ -44,7 +44,6 @@
                                             Orientation="Horizontal"
                                             Spacing="16">
                                             <Frame
-                                                Padding="0"
                                                 Visual="Material"
                                                 CornerRadius="6">
                                                 <Image

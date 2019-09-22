@@ -31,7 +31,6 @@
 
                             <Frame
                                 Margin="0,0,0,15.5"
-                                Padding="0"
                                 CornerRadius="10"
                                 OutlineColor="#FFC5C5C5"
                                 HasShadow="False"
@@ -67,60 +66,59 @@
                                 Style="{StaticResource TxtSubTit2_5}" />
                         </StackLayout>
                         <BoxView
+                            Margin="0,10,0,0"
                             BackgroundColor="{StaticResource colTer}"
-                            HeightRequest="1.2"
-                            Margin="0,10,0,0"/>
+                            HeightRequest="1.2" />
                         <StackLayout
-                                Grid.Row="1"
-                                Margin="0,35,0,190"
-                                Spacing="15">
+                            Grid.Row="1"
+                            Margin="0,35,0,190"
+                            Spacing="15">
                             <StackLayout
-                                    Orientation="Horizontal"
-                                    Spacing="20">
+                                Orientation="Horizontal"
+                                Spacing="20">
                                 <Label
-                                        Text="Track order"
-                                        Style="{StaticResource TxtHeadline6_2}" />
+                                    Text="Track order"
+                                    Style="{StaticResource TxtHeadline6_2}" />
 
                                 <Frame
-                                        Padding="0"
-                                        BackgroundColor="{StaticResource colPrim}"
-                                        HasShadow="False"
-                                        CornerRadius="10"
-                                        Visual="Material"
-                                        WidthRequest="78"
-                                        HeightRequest="22"
-                                        HorizontalOptions="StartAndExpand"
-                                        VerticalOptions="Center">
+                                    BackgroundColor="{StaticResource colPrim}"
+                                    HasShadow="False"
+                                    CornerRadius="10"
+                                    Visual="Material"
+                                    WidthRequest="78"
+                                    HeightRequest="22"
+                                    HorizontalOptions="StartAndExpand"
+                                    VerticalOptions="Center">
                                     <Label
-                                            Text="3 orders"
-                                            Style="{StaticResource Button_7}"
-                                            HorizontalOptions="Center"
-                                            VerticalOptions="Center" />
+                                        Text="3 orders"
+                                        Style="{StaticResource Button_7}"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center" />
                                 </Frame>
                             </StackLayout>
 
 
                             <Label
-                                    Text="Payment"
-                                    Style="{StaticResource TxtHeadline6_2}" />
+                                Text="Payment"
+                                Style="{StaticResource TxtHeadline6_2}" />
 
                             <Label
-                                    Text="Address"
-                                    Style="{StaticResource TxtHeadline6_2}" />
+                                Text="Address"
+                                Style="{StaticResource TxtHeadline6_2}" />
 
                             <Label
-                                    Text="Settings"
-                                    Style="{StaticResource TxtHeadline6_2}" />
+                                Text="Settings"
+                                Style="{StaticResource TxtHeadline6_2}" />
 
                             <Label
-                                    Text="Refer eam"
-                                    Style="{StaticResource TxtHeadline6_2}" />
+                                Text="Refer eam"
+                                Style="{StaticResource TxtHeadline6_2}" />
 
                         </StackLayout>
                         <Label
-                                    Grid.Row="1"
-                                    Text="Logout"
-                                    Style="{StaticResource TxtTitle_6}"/>
+                            Grid.Row="1"
+                            Text="Logout"
+                            Style="{StaticResource TxtTitle_6}" />
                     </StackLayout>
 
 

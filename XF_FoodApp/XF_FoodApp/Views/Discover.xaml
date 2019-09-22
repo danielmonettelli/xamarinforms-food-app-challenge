@@ -49,7 +49,6 @@
                                         BackgroundColor="transparent"
                                         HasShadow="False">
                                         <Frame
-                                            Padding="0"
                                             CornerRadius="6"
                                             WidthRequest="208"
                                             BackgroundColor="{StaticResource colQua}"
@@ -57,7 +56,6 @@
                                             HasShadow="False">
                                             <StackLayout Spacing="6">
                                                 <Frame
-                                                    Padding="0"
                                                     CornerRadius="6"
                                                     Visual="Material"
                                                     HasShadow="False">
@@ -96,7 +94,6 @@
 
                                                     <Frame
                                                         Margin="0,-4,0,0"
-                                                        Padding="0"
                                                         BackgroundColor="{StaticResource colPrim}"
                                                         HasShadow="False"
                                                         CornerRadius="10"
@@ -156,7 +153,6 @@
                                         <StackLayout Spacing="4">
                                             <Frame
                                                 Margin="0,0,0,4"
-                                                Padding="0"
                                                 WidthRequest="88"
                                                 HeightRequest="88"
                                                 Visual="Material"

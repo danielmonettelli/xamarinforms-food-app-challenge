@@ -68,11 +68,11 @@
     <Style TargetType="StackLayout">
         <Setter Property="Spacing" Value="0" />
     </Style>
+
+    <Style TargetType="Frame">
+        <Setter Property="Padding" Value="0" />
+    </Style>
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    
-    
-    
-    
     
     
     <!-- SPACES PERSONALIZADOS -->
@@ -90,7 +90,5 @@
         <Setter Property="Padding" Value="{StaticResource idealPSpace}" />
     </Style>
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-
-   
 
 </ResourceDictionary>

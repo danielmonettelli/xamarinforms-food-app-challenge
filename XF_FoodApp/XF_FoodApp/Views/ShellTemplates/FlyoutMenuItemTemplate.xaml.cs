@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace XF_FoodApp.Views.ShellTemplates
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FlyoutMenuItemTemplate : StackLayout
+    public partial class FlyoutMenuItemTemplate : Grid
     {
         public FlyoutMenuItemTemplate()
         {

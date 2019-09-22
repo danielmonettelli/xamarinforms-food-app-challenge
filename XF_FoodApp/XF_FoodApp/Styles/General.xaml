@@ -12,6 +12,7 @@
         <ResourceDictionary Source="Texts.xaml" />
         <ResourceDictionary Source="Icons.xaml" />
         <ResourceDictionary Source="Spaces.xaml" />
+        <!--<ResourceDictionary Source="ShellStyle.xaml"/>-->
     </ResourceDictionary.MergedDictionaries>
 
 

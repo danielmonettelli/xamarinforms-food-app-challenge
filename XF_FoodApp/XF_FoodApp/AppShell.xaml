@@ -18,48 +18,66 @@
     Visual="Material"
     mc:Ignorable="d">
 
-    <!--
-        Styles and Resources
-    -->
+
+    <!--  SHELL RESOURCES  -->
+    <!--  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <Shell.Resources>
-        <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#FEFEFE</Color>
-            <Style
-                x:Key="BaseStyle"
-                TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource colPrim}" />
-                <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
-                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
-            </Style>
+        <Color x:Key="NavigationPrimary">#FEFEFE</Color>
+        <Style
+            x:Key="BaseStyle"
+            TargetType="Element">
+            <Setter Property="Shell.BackgroundColor" Value="{DynamicResource colPrim}" />
+            <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
+            <Setter Property="Shell.TabBarTitleColor" Value="{DynamicResource colPrim}" />
+        </Style>
 
-            <Style
-                x:Key="BaseStyle1"
-                TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.ForegroundColor" Value="{StaticResource colPrim}" />
-                <Setter Property="Shell.TitleColor" Value="{StaticResource colPrim}" />
-                <Setter Property="Shell.UnselectedColor" Value="#FF96969A" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource colPrim}" />
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
-                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
-            </Style>
+        <Style
+            x:Key="BaseStyle1"
+            TargetType="Element">
+            <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+            <Setter Property="Shell.ForegroundColor" Value="{StaticResource colPrim}" />
+            <Setter Property="Shell.TitleColor" Value="{StaticResource colPrim}" />
+            <Setter Property="Shell.UnselectedColor" Value="#FF96969A" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource colPrim}" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
+            <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
+        </Style>
 
-            <Style
-                BasedOn="{StaticResource BaseStyle}"
-                TargetType="TabBar" />
-            <Style
-                BasedOn="{StaticResource BaseStyle}"
-                TargetType="FlyoutItem" />
-        </ResourceDictionary>
+        <!--  ADD TabBar FlyoutBehavior is INVISIBLE  -->
+        <Style
+            BasedOn="{StaticResource BaseStyle}"
+            TargetType="TabBar"
+            ApplyToDerivedTypes="True" />
+
+        <!--  ADD ShellItem FlyoutBehavior is VISIBLE  -->
+        <Style
+            BasedOn="{StaticResource BaseStyle}"
+            TargetType="ShellItem"
+            ApplyToDerivedTypes="True" />
+
+
+        <!--  ADD FlyoutItem FlyoutBehavior is VISIBLE  -->
+        <Style
+            BasedOn="{StaticResource BaseStyle}"
+            TargetType="FlyoutItem"
+            ApplyToDerivedTypes="True" />
+
     </Shell.Resources>
+    <!--  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
 
 
     <!--  TABS SECTOR  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    <TabBar>
+    <!--  Home in Flyout  -->
+    <ShellItem
+        Title="Home"
+        Icon="{StaticResource icon_fly_home}"
+        FlyoutDisplayOptions="AsSingleItem">
+
         <!--  Explore Tab  -->
         <Tab
             Title="Explore"
@@ -90,15 +108,17 @@
             <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
         </Tab>
 
-    </TabBar>
+    </ShellItem>
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
 
-    <!--  Flyout SECTOR  -->
+    <!--  FLYOUT SECTOR  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <FlyoutItem
         Title="Main1"
-        FlyoutDisplayOptions="AsMultipleItems">
+        FlyoutDisplayOptions="AsMultipleItems"
+        Icon="{StaticResource icon_filtering}">
+
         <!--  Search  -->
         <Tab
             Title="Search"
@@ -123,6 +143,7 @@
     <FlyoutItem
         Title="Main2"
         FlyoutDisplayOptions="AsMultipleItems">
+
         <!--  Settings  -->
         <Tab
             Title="Settings"
@@ -135,50 +156,8 @@
             Icon="{StaticResource icon_fly_support}">
             <ShellContent ContentTemplate="{DataTemplate view:Profile}" />
         </Tab>
-        <!--<Tab Title="About">
-            <Tab.Icon>
-                <FontImageSource
-                    FontFamily="{StaticResource FontAwesome}"
-                    Glyph="{x:Static local:IconFont.InfoCircle}"
-                    Size="14"
-                    Color="White" />
-            </Tab.Icon>
-            <ShellContent
-                Title="General"
-                ContentTemplate="{DataTemplate about:IndexPage}" />
-            <ShellContent
-                Title="Contributors"
-                ContentTemplate="{DataTemplate about:GitHubPage}" />
-        </Tab>-->
 
     </FlyoutItem>
-
-
-    <!--<Shell.FlyoutHeaderTemplate>
-        <DataTemplate>
-            <Grid>
-                <Image Source="img_bgflyout.png"
-                       Aspect="AspectFill"/>
-            </Grid>
-        </DataTemplate>
-    </Shell.FlyoutHeaderTemplate>
-
-    <Shell.ItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                <Label Text="Hola"
-                       TextColor="Black"/>
-            </ContentView>
-        </DataTemplate>
-    </Shell.ItemTemplate>
-
-    <Shell.MenuItemTemplate>
-        <DataTemplate>
-            <ContentView>
-            </ContentView>
-        </DataTemplate>
-    </Shell.MenuItemTemplate>-->
-
-
+    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
 </Shell>
