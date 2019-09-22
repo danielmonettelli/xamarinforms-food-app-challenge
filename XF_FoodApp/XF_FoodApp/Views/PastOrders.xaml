@@ -6,16 +6,31 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:XF_FoodApp.ViewModels"
-    Title="My orders"
     mc:Ignorable="d">
 
     <ContentPage.BindingContext>
         <vm:MainViewModel />
     </ContentPage.BindingContext>
 
+    <Shell.TitleView>
+        <StackLayout
+            Padding="0,0,10,0"
+            Orientation="Horizontal">
+            <Label
+                Text="My orders"
+                Style="{StaticResource TxtH6Flyout_1}"
+                VerticalOptions="CenterAndExpand" />
+            <Switch
+                Toggled="Switch_Toggled"
+                OnColor="Black"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </Shell.TitleView>
+
     <ContentPage.Content>
         <Grid>
-            <BoxView BackgroundColor="{StaticResource colBG1}" />
+            <BoxView BackgroundColor="{DynamicResource colBG2}" />
 
 
             <Grid>
@@ -31,11 +46,11 @@
                             <DataTemplate>
                                 <Frame
                                     Padding="16,4"
-                                    BackgroundColor="{StaticResource colBG1}"
+                                    BackgroundColor="{DynamicResource colBG2}"
                                     HasShadow="False">
                                     <Frame
                                         Padding="8"
-                                        BackgroundColor="{StaticResource colQua}"
+                                        BackgroundColor="{DynamicResource colSurf2}"
                                         CornerRadius="8"
                                         Visual="Material"
                                         HasShadow="True">

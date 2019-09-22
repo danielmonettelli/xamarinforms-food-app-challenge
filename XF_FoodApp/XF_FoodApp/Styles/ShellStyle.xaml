@@ -12,7 +12,7 @@
     <Style
         x:Key="BaseStyle"
         TargetType="Element">
-        <Setter Property="Shell.BackgroundColor" Value="{StaticResource colPrim}" />
+        <Setter Property="Shell.BackgroundColor" Value="{DynamicResource colPrim}" />
         <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
         <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
         <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
@@ -23,13 +23,13 @@
         x:Key="BaseStyle1"
         TargetType="Element">
         <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
-        <Setter Property="Shell.ForegroundColor" Value="{StaticResource colPrim}" />
-        <Setter Property="Shell.TitleColor" Value="{StaticResource colPrim}" />
+        <Setter Property="Shell.ForegroundColor" Value="{DynamicResource colPrim}" />
+        <Setter Property="Shell.TitleColor" Value="{DynamicResource colPrim}" />
         <Setter Property="Shell.UnselectedColor" Value="#FF96969A" />
         <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-        <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource colPrim}" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="{DynamicResource colPrim}" />
         <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
-        <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
+        <Setter Property="Shell.TabBarTitleColor" Value="{DynamicResource colPrim}" />
     </Style>
 
     <!--  ADD TabBar FlyoutBehavior is INVISIBLE  -->

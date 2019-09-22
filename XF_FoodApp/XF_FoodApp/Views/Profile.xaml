@@ -6,16 +6,31 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:XF_FoodApp.ViewModels"
-    Title="My Profile"
     mc:Ignorable="d">
 
     <ContentPage.BindingContext>
         <vm:MainViewModel />
     </ContentPage.BindingContext>
 
+    <Shell.TitleView>
+        <StackLayout
+            Padding="0,0,10,0"
+            Orientation="Horizontal">
+            <Label
+                Text="My Profile"
+                Style="{StaticResource TxtH6Flyout_1}"
+                VerticalOptions="CenterAndExpand" />
+            <Switch
+                Toggled="Switch_Toggled"
+                OnColor="Black"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </Shell.TitleView>
+
     <ContentPage.Content>
         <Grid>
-            <BoxView BackgroundColor="{StaticResource colQua}" />
+            <BoxView BackgroundColor="{DynamicResource colBG1}" />
             <ScrollView>
                 <Grid Padding="16,16,16,10">
                     <Grid.RowDefinitions>
@@ -67,7 +82,7 @@
                         </StackLayout>
                         <BoxView
                             Margin="0,10,0,0"
-                            BackgroundColor="{StaticResource colTer}"
+                            BackgroundColor="{DynamicResource colTer}"
                             HeightRequest="1.2" />
                         <StackLayout
                             Grid.Row="1"
@@ -81,7 +96,7 @@
                                     Style="{StaticResource TxtHeadline6_2}" />
 
                                 <Frame
-                                    BackgroundColor="{StaticResource colPrim}"
+                                    BackgroundColor="{DynamicResource colPrim}"
                                     HasShadow="False"
                                     CornerRadius="10"
                                     Visual="Material"

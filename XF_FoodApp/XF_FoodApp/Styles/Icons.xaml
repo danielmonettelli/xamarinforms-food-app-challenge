@@ -108,6 +108,11 @@
     <!--  FontImageSource FLYOUT  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <FontImageSource
+        x:Key="icon_fly_main"
+        FontFamily="{StaticResource MaterialIconFont}"
+        Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}" />
+
+    <FontImageSource
         x:Key="icon_fly_home"
         FontFamily="{StaticResource MaterialIconFont}"
         Glyph="{x:Static FontAwesome:IconFont.Home}" />
