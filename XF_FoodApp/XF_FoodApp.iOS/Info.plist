@@ -10,8 +10,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -32,8 +30,6 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>Delicious Food</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>ProductSans-Bold.ttf</string>
@@ -44,5 +40,7 @@
 		<string>materialdesignicons-webfont.ttf</string>
 		<string>CustomIconFont.ttf</string>
 	</array>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>

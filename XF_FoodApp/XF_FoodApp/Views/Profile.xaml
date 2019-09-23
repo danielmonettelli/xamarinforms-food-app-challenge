@@ -13,7 +13,8 @@
     </ContentPage.BindingContext>
 
     <Shell.TitleView>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal"
+                     Padding="0,0,50,0">
             <Label
                 Text="My Profile"
                 Style="{StaticResource TxtHeadline6_3}"
@@ -21,7 +22,7 @@
                 <Label.HorizontalOptions>
                     <OnPlatform
                         x:TypeArguments="LayoutOptions"
-                        iOS="EndAndExpand"
+                        iOS="CenterAndExpand"
                         Android="StartAndExpand" />
                 </Label.HorizontalOptions>
             </Label>

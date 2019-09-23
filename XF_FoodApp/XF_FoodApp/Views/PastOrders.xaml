@@ -14,8 +14,8 @@
 
     <Shell.TitleView>
         <StackLayout
-            Padding="0,0,10,0"
-            Orientation="Horizontal">
+                       Orientation="Horizontal"
+                       Padding="0,0,50,0" >
             <Label
                 Text="My orders"
                 Style="{StaticResource TxtHeadline6_3}"
@@ -23,7 +23,7 @@
                 <Label.HorizontalOptions>
                     <OnPlatform
                         x:TypeArguments="LayoutOptions"
-                        iOS="EndAndExpand"
+                        iOS="CenterAndExpand"
                         Android="StartAndExpand" />
                 </Label.HorizontalOptions>
             </Label>

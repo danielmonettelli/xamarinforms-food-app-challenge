@@ -8,7 +8,7 @@
     xmlns:ShellTemplate="clr-namespace:XF_FoodApp.Views.ShellTemplates"
     xmlns:view="clr-namespace:XF_FoodApp.Views"
     xmlns:FontAwesome="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
-    Title="XF_FoodApp"
+    Title="Delicious Food"
     FlyoutBackgroundImage="img_bgflyout.png"
     FlyoutBackgroundImageAspect="AspectFill"
     FlyoutIcon="{StaticResource icon_fly_main}"
