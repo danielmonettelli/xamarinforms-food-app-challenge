@@ -13,16 +13,15 @@
         <ColumnDefinition Width="50" />
         <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
+
     <Grid.RowDefinitions>
         <RowDefinition Height="50" />
         <RowDefinition Height="Auto" />
-
     </Grid.RowDefinitions>
 
     <Frame
         Grid.Row="0"
         Grid.Column="0"
-        Padding="0"
         CornerRadius="25"
         OutlineColor="#FFC5C5C5"
         HasShadow="False"

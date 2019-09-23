@@ -13,26 +13,18 @@
     </ContentPage.BindingContext>
 
     <Shell.TitleView>
-        <StackLayout
-            Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal">
             <Label
                 Text="My Profile"
-                Style="{StaticResource TxtH6Flyout_1}"
+                Style="{StaticResource TxtHeadline6_3}"
                 VerticalOptions="CenterAndExpand">
                 <Label.HorizontalOptions>
-                     <OnPlatform x:TypeArguments="LayoutOptions"
-                      iOS="EndAndExpand"
-                      Android="StartAndExpand" />
+                    <OnPlatform
+                        x:TypeArguments="LayoutOptions"
+                        iOS="EndAndExpand"
+                        Android="StartAndExpand" />
                 </Label.HorizontalOptions>
             </Label>
-        
-            <Switch
-                Toggled="Switch_Toggled"
-                OnColor="Black"
-                HorizontalOptions="EndAndExpand"
-                VerticalOptions="CenterAndExpand"
-                Visual="Material"
-                Margin="0,0,10,0" />
         </StackLayout>
     </Shell.TitleView>
 

@@ -77,7 +77,8 @@
     <x:Double x:Key="TxtSizeOver_10">10</x:Double>
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
-    <!--  STYLES FLYOUT  -->
+    
+    <!--  STYLES TEXT FLYOUT  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <Style x:Key="TxtH5Flyout_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colQua}" />
@@ -130,7 +131,9 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH6_20}" />
         <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
     </Style>
-    
+
+    <Style x:Key="TxtHeadline6_3" TargetType="Label" BasedOn="{StaticResource TxtH6Flyout_1}"/>
+
     <Style x:Key="TxtTitle_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colSec}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />

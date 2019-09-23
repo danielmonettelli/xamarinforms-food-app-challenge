@@ -22,13 +22,13 @@
 
 
     <!--  CHANGED FLYOUT ICON  -->
-    <!--  +++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <!--<Shell.FlyoutIcon>
         <FontImageSource
             FontFamily="{StaticResource MaterialIconFont}"
             Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}"/>
     </Shell.FlyoutIcon>-->
-    <!--  +++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
 
     <!--  SHELL RESOURCES  -->
@@ -38,29 +38,16 @@
         <Style
             x:Key="BaseStyle"
             TargetType="Element">
-            <!-- En iOS esta propiedad cambia el color del FlyoutIcon y los tab superiores seleccionados -->
-             <Setter Property="Shell.ForegroundColor" Value="{DynamicResource colQua}" />
-               <!-- En iOS esta propiedad cambia el color tabs superiores no seleccionados -->
-             <Setter Property="Shell.UnselectedColor" Value="{DynamicResource colTabBarUns}" />
+            <!--  In iOS, this property changes the color of the FlyoutIcon and the selected top tabs  -->
+            <Setter Property="Shell.ForegroundColor" Value="{DynamicResource colQua}" />
+            <!--  In iOS this property changes the color tabs upper not selected  -->
+            <Setter Property="Shell.UnselectedColor" Value="{DynamicResource colTabBarUns}" />
 
             <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
             <Setter Property="Shell.TitleColor" Value="#FFFFFF" />
             <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource colTabBarBack}" />
             <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource colTabBarUns}" />
             <Setter Property="Shell.TabBarTitleColor" Value="{DynamicResource colPrim}" />
-        </Style>
-
-        <Style
-            x:Key="BaseStyle1"
-            TargetType="Element">
-            <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
-            <Setter Property="Shell.ForegroundColor" Value="{StaticResource colPrim}" />
-            <Setter Property="Shell.TitleColor" Value="{StaticResource colPrim}" />
-            <Setter Property="Shell.UnselectedColor" Value="#FF96969A" />
-            <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-            <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource colPrim}" />
-            <Setter Property="Shell.TabBarUnselectedColor" Value="#FF96969A" />
-            <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource colPrim}" />
         </Style>
 
         <!--  ADD TabBar FlyoutBehavior is INVISIBLE  -->
@@ -89,7 +76,7 @@
 
     <!--  TABS SECTOR  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    <!--  Home in Flyout  -->
+    <!--  Home in Flyout GROUP  -->
     <ShellItem
         Title="Home"
         Icon="{StaticResource icon_fly_home}"

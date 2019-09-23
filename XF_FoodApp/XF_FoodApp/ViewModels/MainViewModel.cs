@@ -14,6 +14,19 @@ namespace XF_FoodApp.ViewModels
     {
 
         #region Properties
+        private bool _isBusy = false;
+
+        public bool IsBusy
+        {
+            get { return _isBusy; }
+            set
+            {
+                _isBusy = value;
+                OnPropertyChanged();
+            }
+        }
+
+
         private List<Restaurant> _listRestaurant;
 
         public List<Restaurant> ListRestaurant

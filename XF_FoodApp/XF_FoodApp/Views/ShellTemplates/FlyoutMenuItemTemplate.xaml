@@ -11,10 +11,12 @@
         <ColumnDefinition Width="0.2*" />
         <ColumnDefinition Width="0.8*" />
     </Grid.ColumnDefinitions>
+
     <Image
         Margin="5"
         Source="{Binding Icon}"
         HeightRequest="45" />
+
     <Label
         Grid.Column="1"
         Text="{Binding Text}"

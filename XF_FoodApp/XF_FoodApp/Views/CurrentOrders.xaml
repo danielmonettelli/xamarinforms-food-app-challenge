@@ -18,20 +18,15 @@
             Orientation="Horizontal">
             <Label
                 Text="My orders"
-                Style="{StaticResource TxtH6Flyout_1}"
-                VerticalOptions="CenterAndExpand" >
+                Style="{StaticResource TxtHeadline6_3}"
+                VerticalOptions="CenterAndExpand">
                 <Label.HorizontalOptions>
-                     <OnPlatform x:TypeArguments="LayoutOptions"
-                      iOS="EndAndExpand"
-                      Android="StartAndExpand" />
+                    <OnPlatform
+                        x:TypeArguments="LayoutOptions"
+                        iOS="EndAndExpand"
+                        Android="StartAndExpand" />
                 </Label.HorizontalOptions>
             </Label>
-            <Switch
-                Toggled="Switch_Toggled"
-                OnColor="Black"
-                HorizontalOptions="EndAndExpand"
-                VerticalOptions="CenterAndExpand"
-                Visual="Material"/>
         </StackLayout>
     </Shell.TitleView>
 

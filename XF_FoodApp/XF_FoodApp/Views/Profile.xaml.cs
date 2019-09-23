@@ -16,20 +16,7 @@ namespace XF_FoodApp.Views
         public Profile()
         {
             InitializeComponent();
-        }
 
-        private void Switch_Toggled(object sender, ToggledEventArgs e)
-        {
-            if (e.Value == true)
-            {
-                Application.Current.Resources.Clear();
-                Application.Current.Resources = new DarkTheme();
-            }
-            else
-            {
-                Application.Current.Resources.Clear();
-                Application.Current.Resources = new WhiteTheme();
-            }
         }
     }
 }

@@ -8,26 +8,37 @@
     Source="/Styles/General.xaml"
     mc:Ignorable="d">
 
+    <!--  Color Range  -->
+    <Color x:Key="colPrim">#FFF871C7</Color>
+    <Color x:Key="colSec">#FF8199FF</Color>
+    <Color x:Key="colTer">#FFC5C5C5</Color>
+    <Color x:Key="colQua">#FFFFFFFF</Color>
+    <Color x:Key="colQui">#FFFFFFFF</Color>
+
+    <!--  Backgroundcolors  -->
+    <Color x:Key="colBG1">#FF121212</Color>
+    <Color x:Key="colBG2">#FF121212</Color>
+
+    <!--  Entry Colors  -->
     <Color x:Key="colAccCheck">#FFE7F9F5</Color>
     <Color x:Key="colAccError">#FFF9E7EB</Color>
     <Color x:Key="colAccUns">#FFF2F3F5</Color>
+    <Color x:Key="colUnsPrim">#FFC7CAD1</Color>
     <Color x:Key="colAltQua">#FFE3E7EF</Color>
-    <Color x:Key="colBG2">#FF121212</Color>
+
+    <!--  Border Colors  -->
     <Color x:Key="colBorCheck">#FF10CA87</Color>
     <Color x:Key="colBorError">#FFCA1030</Color>
-    <Color x:Key="colQua">#FFFFFFFF</Color>
+
+    <!--  Remark Colors  -->
     <Color x:Key="colRemPrim">#FFF93963</Color>
     <Color x:Key="colRemSec">#FFD4145C</Color>
-    <Color x:Key="colUnsPrim">#FFC7CAD1</Color>
 
-    <Color x:Key="colBG1">#FF121212</Color>
+    <!--  Surface Colors  -->
     <Color x:Key="colSurf1">#FF121212</Color>
     <Color x:Key="colSurf2">#FF1D1D1D</Color>
-    <Color x:Key="colPrim">#FFF871C7</Color>
-    <Color x:Key="colQui">#FFFFFFFF</Color>
-    <Color x:Key="colSec">#FF8199FF</Color>
-    <Color x:Key="colTer">#FFC5C5C5</Color>
 
+    <!--  Shell Colors  -->
     <Color x:Key="colTabBarUns">#FFC5C5C5</Color>
     <Color x:Key="colTabBarBack">#FF121212</Color>
 

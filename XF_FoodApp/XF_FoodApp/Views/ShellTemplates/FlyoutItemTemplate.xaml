@@ -22,6 +22,6 @@
         Grid.Column="1"
         VerticalOptions="Center"
         Text="{Binding Title}"
-     Style="{StaticResource TxtH5Flyout_1}"/>
+        Style="{StaticResource TxtH5Flyout_1}" />
 
 </Grid>

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XF_FoodApp.Styles.Themes;
+using XF_FoodApp.ViewModels;
 
 namespace XF_FoodApp.Views
 {
@@ -17,7 +18,6 @@ namespace XF_FoodApp.Views
         {
             InitializeComponent();
 
-           
         }
 
         private void Switch_Toggled(object sender, ToggledEventArgs e)

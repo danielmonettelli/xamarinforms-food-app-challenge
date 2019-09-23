@@ -73,18 +73,18 @@
         <Setter Property="Padding" Value="0" />
     </Style>
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    
-    
-    <!-- SPACES PERSONALIZADOS -->
+
+
+    <!-- CUSTOM SPACE TYPES -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <OnPlatform x:Key="idealPSpace" x:TypeArguments="Thickness">
         <On Platform="Android" Value="16,0,0,0" />
         <On Platform="iOS" Value="18,0,0,0" />
     </OnPlatform>
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    
-    
-    <!--  SPACES Grid PERSONALIZADOS  -->
+
+
+    <!--  CUSTOM GRID SPACES  -->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <Style TargetType="Grid" x:Key="GridIdealPSpace">
         <Setter Property="Padding" Value="{StaticResource idealPSpace}" />
