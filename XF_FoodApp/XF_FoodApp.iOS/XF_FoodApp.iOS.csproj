@@ -419,4 +419,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\img_bgflyout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconSplashScreen%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconMain%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconMain%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconSplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconSplashScreen%402x.png" />
+  </ItemGroup>
 </Project>
