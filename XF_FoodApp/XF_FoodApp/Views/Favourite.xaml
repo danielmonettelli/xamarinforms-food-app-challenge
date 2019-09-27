@@ -14,8 +14,8 @@
 
     <Shell.TitleView>
         <StackLayout
-            Orientation="Horizontal"
-             Padding="0,0,50,0">
+            Padding="0,0,50,0"
+            Orientation="Horizontal">
             <Label
                 Text="Favourite"
                 Style="{StaticResource TxtHeadline6_3}"

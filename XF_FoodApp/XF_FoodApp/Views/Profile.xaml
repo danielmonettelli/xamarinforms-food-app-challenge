@@ -13,8 +13,9 @@
     </ContentPage.BindingContext>
 
     <Shell.TitleView>
-        <StackLayout Orientation="Horizontal"
-                     Padding="0,0,50,0">
+        <StackLayout
+            Padding="0,0,50,0"
+            Orientation="Horizontal">
             <Label
                 Text="My Profile"
                 Style="{StaticResource TxtHeadline6_3}"
