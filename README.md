@@ -10,8 +10,9 @@
  
  ## Documentation
 
-The documentation is in my Medium blog. <a href="https://www.youtube.com/watch?v=Wlyg5oRWz-M">https://medium.com/@DanielMonetelli/creando-una-limpia-librer%C3%ADa-de-estilos-para-xamarin-forms-v1-0-b02769f916ed</a>
- 
+The documentation in Spanish is in my Medium blog. <a href="https://www.youtube.com/watch?v=Wlyg5oRWz-M">https://medium.com/@DanielMonetelli/creando-una-limpia-librer%C3%ADa-de-estilos-para-xamarin-forms-v1-0-b02769f916ed</a>
+
+The documentation in English is in my personal blog <a href="https://www.youtube.com/watch?v=Wlyg5oRWz-M">https://danielmonetelli.azurewebsites.net/creating-a-clean-style-library-for-xamarin-forms-v1-0/</a>
  
  ## Open Source Love
 
