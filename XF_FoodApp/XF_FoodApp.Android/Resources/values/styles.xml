@@ -6,7 +6,13 @@
   <style name="SplashTheme" parent="Theme.AppCompat.Light">
     <item name="android:windowBackground">@drawable/SplashScreen</item>
     <item name="android:windowNoTitle">true</item>
-    <item name="android:windowFullscreen">true</item>
+    
+    <!--  A good practice is to leave it false so that the pages do not deform.  -->
+    <!--  ==========================================================  -->
+    <item name="android:windowFullscreen">false</item>
+    <item name="colorPrimaryDark">#680040</item>
+    <!--  ==========================================================  -->
+    
     <item name="android:windowAnimationStyle">@null</item>
   </style>
   <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->

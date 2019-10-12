@@ -49,7 +49,7 @@ namespace XF_FoodApp.Services
                     Rating2_Restaurant="(545 ratings)"
                 },
 
-                };
+            };
 
             return restaurant;
         }
@@ -126,7 +126,7 @@ namespace XF_FoodApp.Services
                    Title_Food="Pollo a la braza",
                    Price_Food="S/ 75",
                 }
-                };
+            };
 
             return food;
         }
