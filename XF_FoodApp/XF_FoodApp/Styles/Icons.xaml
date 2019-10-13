@@ -8,81 +8,71 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--  MATERIAL ICONS FONT  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region MATERIAL ICONS FONT-->
     <OnPlatform
         x:Key="MaterialIconFont"
         x:TypeArguments="x:String"
         Android="materialdesignicons-webfont.ttf#Material Design Icons"
         iOS="Material Design Icons" />
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!--  CUSTOM ICONS FONT WITH IconMoon  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region CUSTOM ICONS FONT WITH IconMoon-->
     <OnPlatform
         x:Key="CustomIconFont"
         x:TypeArguments="x:String"
         Android="CustomIconFont.ttf#CustomIconFont"
         iOS="CustomIconFont" />
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!--  COLOR ICONS FONT  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region COLOR ICONS FONT-->
     <Color x:Key="TabColorIcon">#BABEC6</Color>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!--  SIZE ICONS FONT  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region SIZE ICONS FONT-->
     <x:Double x:Key="TabSizeIcon">140</x:Double>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> OPTIONAL <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    <!--  PLATFORMS CHANGE ICONS FONT FOR Glyph  -->
-    <!--  =====================================================================  -->
+    <!--#region PLATFORMS OPTIONAL-->
+    <!--#region PLATFORMS CHANGE ICONS FONT FOR Glyph-->
     <OnPlatform
         x:Key="OnStringIcon"
         x:TypeArguments="x:String"
         Android="{x:Static FontAwesome:IconFont.AccessPoint}"
         iOS="{x:Static FontAwesome:IconFont.Cached}" />
-    <!--  =====================================================================  -->
+    <!--#endregion-->
 
-    <!--  PLATFORMS COLOR ICONS FONT  -->
-    <!--  =====================================================================  -->
+    <!--#region PLATFORMS COLOR ICONS FONT-->
     <OnPlatform
         x:Key="OnColorIcon"
         x:TypeArguments="Color"
         Android="#17D47E"
         iOS="#EA29E2" />
-    <!--  =====================================================================  -->
+    <!--#endregion-->
 
-    <!--  PLATFORMS SIZE ICONS FONT  -->
-    <!--  =====================================================================  -->
+    <!--#region PLATFORMS SIZE ICONS FONT-->
     <OnPlatform
         x:Key="OnSizeIcon"
         x:TypeArguments="x:Double"
         Android="200"
         iOS="30" />
-    <!--  =====================================================================  -->
+    <!--#endregion-->
 
-    <!--  PLATFORMS IN FontImageSource  -->
-    <!--  =====================================================================  -->
+    <!--#region PLATFORMS IN FontImageSource-->
     <FontImageSource
         x:Key="OnFIconDemo"
         FontFamily="{StaticResource MaterialIconFont}"
         Glyph="{StaticResource OnStringIcon}"
         Size="{StaticResource OnSizeIcon}"
         Color="{StaticResource OnColorIcon}" />
-    <!--  =====================================================================  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
+    <!--#endregion-->
 
 
-    <!--  FontImageSource TABS  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region FontImageSource TABS-->
     <FontImageSource
         x:Key="icon_tab_explore"
         FontFamily="{StaticResource CustomIconFont}"
@@ -102,20 +92,18 @@
         x:Key="icon_tab_profile"
         FontFamily="{StaticResource CustomIconFont}"
         Glyph="{x:Static FontAwesome:CustomIconFont.icon_tab_profile}" />
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!--  FontImageSource FLYOUT  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    
-    <!--  Flyout Icon  -->
-    <!--  =====================================================================  -->
+    <!--#region FontImageSource FLYOUT-->
+
+    <!--#region Flyout Icon-->
     <FontImageSource
         x:Key="icon_fly_main"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}"/>
-    <!--  =====================================================================  -->
-    
+        Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}" />
+    <!--#endregion-->
+
     <FontImageSource
         x:Key="icon_fly_home"
         FontFamily="{StaticResource MaterialIconFont}"
@@ -146,11 +134,10 @@
         x:Key="icon_fly_support"
         FontFamily="{StaticResource MaterialIconFont}"
         Glyph="{x:Static FontAwesome:IconFont.FaceAgent}" />
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!--  FontImageSource INTERFACES  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region FontImageSource INTERFACES-->
     <FontImageSource
         x:Key="icon_filtering"
         FontFamily="{StaticResource CustomIconFont}"
@@ -206,5 +193,6 @@
         Glyph="{x:Static FontAwesome:CustomIconFont.icon_location}"
         Size="14"
         Color="#B9BDC5" />
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
+
 </ResourceDictionary>

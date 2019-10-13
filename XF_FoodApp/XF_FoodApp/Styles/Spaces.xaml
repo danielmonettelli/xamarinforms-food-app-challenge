@@ -7,8 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--  TYPES OF SPACES  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region TYPES OF SPACES-->
     <OnPlatform x:Key="idealSpace" x:TypeArguments="Thickness">
         <On Platform="Android" Value="16,0" />
         <On Platform="iOS" Value="18,0" />
@@ -23,11 +22,10 @@
         <On Platform="Android" Value="32,0" />
         <On Platform="iOS" Value="34,0" />
     </OnPlatform>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-   
+   <!--#endregion-->
 
-    <!--  SPACES Grid  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+    <!--#region SPACES Grid-->
     <Style x:Key="GridIdealSpace" TargetType="Grid">
         <Setter Property="Padding" Value="{StaticResource idealSpace}" />
     </Style>
@@ -39,11 +37,10 @@
     <Style x:Key="GridBigSpace" TargetType="Grid">
         <Setter Property="Padding" Value="{StaticResource bigSpace}" />
     </Style>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+   <!--#endregion-->
 
-    
-    <!--  SPACES StackLayout  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+    <!--#region SPACES StackLayout-->
     <Style x:Key="StackIdealSpace" TargetType="StackLayout">
         <Setter Property="Padding" Value="{StaticResource idealSpace}" />
     </Style>
@@ -55,11 +52,10 @@
     <Style x:Key="StackBigSpace" TargetType="StackLayout">
         <Setter Property="Padding" Value="{StaticResource bigSpace}" />
     </Style>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+   <!--#endregion-->
 
-    
-    <!--  SPACES BASE  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+    <!--#region SPACES BASE-->
     <Style TargetType="Grid">
         <Setter Property="RowSpacing" Value="0" />
         <Setter Property="ColumnSpacing" Value="0" />
@@ -72,23 +68,22 @@
     <Style TargetType="Frame">
         <Setter Property="Padding" Value="0" />
     </Style>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!-- CUSTOM SPACE TYPES -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region CUSTOM SPACE TYPES-->
     <OnPlatform x:Key="idealPSpace" x:TypeArguments="Thickness">
         <On Platform="Android" Value="16,0,0,0" />
         <On Platform="iOS" Value="18,0,0,0" />
     </OnPlatform>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 
-    <!--  CUSTOM GRID SPACES  -->
+    <!--#region  CUSTOM GRID SPACES-->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <Style TargetType="Grid" x:Key="GridIdealPSpace">
         <Setter Property="Padding" Value="{StaticResource idealPSpace}" />
     </Style>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 </ResourceDictionary>

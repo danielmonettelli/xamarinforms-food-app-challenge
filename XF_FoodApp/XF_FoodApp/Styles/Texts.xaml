@@ -7,45 +7,48 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--  FONTSFAMILY [ProductSans]  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    <!--  Bold  -->
+    <!--#region FONTSFAMILY [ProductSans]-->
+    <!--#region Bold-->
     <OnPlatform x:Key="BoldFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-Bold.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-Bold" />
     </OnPlatform>
+    <!--#endregion-->
 
-    <!--  ItalicBold  -->
+    <!--#region ItalicBold-->
     <OnPlatform x:Key="BoldItalicFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-BoldItalic.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-BoldItalic" />
     </OnPlatform>
+    <!--#endregion-->
 
-    <!--  Italic  -->
+    <!--#region Italic-->
     <OnPlatform x:Key="ItalicFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-Italic.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-Italic" />
     </OnPlatform>
+    <!--#endregion-->
 
-    <!--  Regular  -->
+    <!--#region Regular-->
     <OnPlatform x:Key="RegularFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-Regular.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-Regular" />
     </OnPlatform>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
+    <!--#endregion-->
 
 
-    <!--  FONTSFAMILY [Pacifico]  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-    <!--  Regular  -->
+    <!--#region FONTSFAMILY [Pacifico]-->
+    <!--#region Regular-->
     <OnPlatform x:Key="RegularFont_Pacifico" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/Pacifico-Regular.ttf#Pacifico" />
         <On Platform="iOS" Value="Pacifico-Regular" />
     </OnPlatform>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
+    <!--#endregion-->
 
-    
-    <!--  TEXT SIZE [MATERIAL DESIGN]  -->
+
+    <!--#region TEXT SIZE [MATERIAL DESIGN]-->
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <!--  H1-Light  -->
     <x:Double x:Key="TxtSizeH1_96">96</x:Double>
@@ -75,28 +78,31 @@
     <x:Double x:Key="TxtSizeCap_12">12</x:Double>
     <!--  Overline-Regular  -->
     <x:Double x:Key="TxtSizeOver_10">10</x:Double>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+   <!--#endregion-->
 
-    
-    <!--  STYLES TEXT FLYOUT  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+    <!--#region STYLES TEXT FLYOUT-->
+    <!--#region Headline5-->
     <Style x:Key="TxtH5Flyout_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colQua}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH5_24}" />
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_Pacifico}" />
     </Style>
-
+    <!--#endregion-->
+    
+    <!--#region Headline6-->
     <Style x:Key="TxtH6Flyout_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colQua}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH6_20}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH6_20}" />
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_Pacifico}" />
     </Style>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
+    <!--#endregion-->
 
-    
-    <!--  STYLES TEXT  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+    <!--#region STYLES TEXT-->
+    <!--#region Headline4-->
     <Style x:Key="TxtHeadline4_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colSec}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH4_34}" />
@@ -114,13 +120,23 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH4_34}" />
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}" />
     </Style>
+    <!--#endregion-->
     
+    <!--#region Headline5-->
     <Style x:Key="TxtHeadline5_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colSec}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH5_24}" />
         <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
     </Style>
     
+    <Style x:Key="TxtNumbers" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colQua}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeH5_24}" />
+        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
+    </Style>
+    <!--#endregion-->
+    
+    <!--#region Headline6-->
     <Style x:Key="TxtHeadline6_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colSec}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH6_20}" />
@@ -141,7 +157,9 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeH6_20}" />
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_Pacifico}" />
     </Style>
+    <!--#endregion-->
     
+    <!--#region Title-->
     <Style x:Key="TxtTitle_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colSec}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
@@ -184,6 +202,14 @@
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}" />
     </Style>
 
+    <Style x:Key="TxtRem_1" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colRemPrim}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
+        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
+    </Style>
+    <!--#endregion-->
+    
+    <!--#region Button-->
     <Style x:Key="Button_1" TargetType="Button">
         <Setter Property="TextColor" Value="{DynamicResource colQua}" />
         <Setter Property="BackgroundColor" Value="{DynamicResource colPrim}" />
@@ -234,19 +260,9 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeCap_12}" />
         <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
     </Style>
+    <!--#endregion-->
     
-    <Style x:Key="TxtRem_1" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource colRemPrim}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeTit_18}" />
-        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
-    </Style>
-
-    <Style x:Key="TxtNumbers" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource colQua}" />
-        <Setter Property="FontSize" Value="{StaticResource TxtSizeH5_24}" />
-        <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
-    </Style>
-
+    <!--#region SubTitle1-->
     <Style x:Key="TxtSubTit1_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colSec}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit1_16}" />
@@ -288,7 +304,9 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit1_16}" />
         <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
     </Style>
+    <!--#endregion-->
     
+    <!--#region SubTitle2-->
     <Style x:Key="TxtSubTit2_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colTer}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit2_14}" />
@@ -318,7 +336,9 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeSubTit2_14}" />
         <Setter Property="FontFamily" Value="{StaticResource BoldFont_ProductSans}" />
     </Style>
+    <!--#endregion-->
     
+    <!--#region Body2-->
     <Style x:Key="TxtBody2_1" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource colAltQua}" />
         <Setter Property="FontSize" Value="{StaticResource TxtSizeBod2_14}" />
@@ -336,5 +356,7 @@
         <Setter Property="FontSize" Value="{StaticResource TxtSizeBod2_14}" />
         <Setter Property="FontFamily" Value="{StaticResource RegularFont_ProductSans}" />
     </Style>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
+    <!--#endregion-->
+    
 </ResourceDictionary>

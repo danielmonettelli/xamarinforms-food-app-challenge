@@ -9,6 +9,7 @@ namespace XF_FoodApp.Services
 {
     public class MainService
     {
+        #region GET[Restaurant]
         public List<Restaurant> GetRestaurant()
         {
             var restaurant = new List<Restaurant>
@@ -53,8 +54,9 @@ namespace XF_FoodApp.Services
 
             return restaurant;
         }
+        #endregion
 
-
+        #region GET[Category]
         public List<Category> GetCategory()
         {
             var category = new List<Category>
@@ -89,8 +91,9 @@ namespace XF_FoodApp.Services
 
             return category;
         }
+        #endregion
 
-
+        #region GET[Food]
         public List<Food> GetFood()
         {
             var food = new List<Food>
@@ -130,6 +133,6 @@ namespace XF_FoodApp.Services
 
             return food;
         }
-
+        #endregion
     }
 }

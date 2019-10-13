@@ -15,11 +15,10 @@
     </ResourceDictionary.MergedDictionaries>
 
 
-    <!--  Xamarin.Forms.DebugRainbows  -->
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#region Xamarin.Forms.DebugRainbows-->
     <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
         <Setter Property="rainbows:DebugRainbow.IsDebug" Value="False" />
     </Style>
-    <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+    <!--#endregion-->
 
 </ResourceDictionary>
