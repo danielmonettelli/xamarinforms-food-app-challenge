@@ -11,23 +11,27 @@
     <!--#region MATERIAL ICONS FONT-->
     <OnPlatform
         x:Key="MaterialIconFont"
-        x:TypeArguments="x:String"
-        Android="materialdesignicons-webfont.ttf#Material Design Icons"
-        iOS="Material Design Icons" />
+        x:TypeArguments="x:String">
+        <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons"/>
+        <On Platform="iOS" Value="Material Design Icons"/>
+        <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons"/>
+    </OnPlatform>
     <!--#endregion-->
 
 
     <!--#region CUSTOM ICONS FONT WITH IconMoon-->
     <OnPlatform
         x:Key="CustomIconFont"
-        x:TypeArguments="x:String"
-        Android="CustomIconFont.ttf#CustomIconFont"
-        iOS="CustomIconFont" />
+        x:TypeArguments="x:String">
+        <On Platform="Android" Value="CustomIconFont.ttf#CustomIconFont"/>
+        <On Platform="iOS" Value="CustomIconFont"/>
+        <On Platform="UWP" Value="Assets/Fonts/CustomIconFont.ttf#CustomIconFont"/>
+    </OnPlatform>
     <!--#endregion-->
 
 
     <!--#region COLOR ICONS FONT-->
-    <Color x:Key="TabColorIcon">#BABEC6</Color>
+    <Color x:Key="FlyoutColorIcon">#FFFFFF</Color>
     <!--#endregion-->
 
 
@@ -40,25 +44,31 @@
     <!--#region PLATFORMS CHANGE ICONS FONT FOR Glyph-->
     <OnPlatform
         x:Key="OnStringIcon"
-        x:TypeArguments="x:String"
-        Android="{x:Static FontAwesome:IconFont.AccessPoint}"
-        iOS="{x:Static FontAwesome:IconFont.Cached}" />
+        x:TypeArguments="x:String">
+        <On Platform="Android" Value="{x:Static FontAwesome:IconFont.AccessPoint}"/>
+        <On Platform="iOS" Value="{x:Static FontAwesome:IconFont.Cached}"/>
+        <On Platform="UWP" Value="{x:Static FontAwesome:IconFont.AccountCardDetails}"/>
+    </OnPlatform>
     <!--#endregion-->
 
     <!--#region PLATFORMS COLOR ICONS FONT-->
     <OnPlatform
         x:Key="OnColorIcon"
-        x:TypeArguments="Color"
-        Android="#17D47E"
-        iOS="#EA29E2" />
+        x:TypeArguments="Color">
+        <On Platform="Android" Value="#17D47E"/>
+        <On Platform="iOS" Value="#EA29E2" />
+        <On Platform="UWP" Value="#8DFF2D"/>
+    </OnPlatform>
     <!--#endregion-->
 
     <!--#region PLATFORMS SIZE ICONS FONT-->
     <OnPlatform
         x:Key="OnSizeIcon"
-        x:TypeArguments="x:Double"
-        Android="200"
-        iOS="30" />
+        x:TypeArguments="x:Double">
+        <On Platform="Android" Value="200"/>
+        <On Platform="iOS"  Value="30" />
+        <On Platform="UWP" Value="50"/>
+    </OnPlatform>
     <!--#endregion-->
 
     <!--#region PLATFORMS IN FontImageSource-->
@@ -101,39 +111,46 @@
     <FontImageSource
         x:Key="icon_fly_main"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}" />
+        Glyph="{x:Static FontAwesome:IconFont.FormatListBulletedSquare}"
+        Color="{StaticResource FlyoutColorIcon}"/>
     <!--#endregion-->
 
     <FontImageSource
         x:Key="icon_fly_home"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.Home}" />
+        Glyph="{x:Static FontAwesome:IconFont.Home}"
+        Color="{StaticResource FlyoutColorIcon}"/>
 
     <FontImageSource
         x:Key="icon_fly_search"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.Magnify}" />
+        Glyph="{x:Static FontAwesome:IconFont.Magnify}" 
+        Color="{StaticResource FlyoutColorIcon}" />
 
     <FontImageSource
         x:Key="icon_fly_basket"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.Basket}" />
+        Glyph="{x:Static FontAwesome:IconFont.Basket}"
+        Color="{StaticResource FlyoutColorIcon}" />
 
     <FontImageSource
         x:Key="icon_fly_ticket"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.TicketConfirmation}" />
+        Glyph="{x:Static FontAwesome:IconFont.TicketConfirmation}"
+        Color="{StaticResource FlyoutColorIcon}" />
 
     <FontImageSource
         x:Key="icon_fly_settings"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.Settings}" />
+        Glyph="{x:Static FontAwesome:IconFont.Settings}"
+        Color="{StaticResource FlyoutColorIcon}"/>
 
 
     <FontImageSource
         x:Key="icon_fly_support"
         FontFamily="{StaticResource MaterialIconFont}"
-        Glyph="{x:Static FontAwesome:IconFont.FaceAgent}" />
+        Glyph="{x:Static FontAwesome:IconFont.FaceAgent}"
+        Color="{StaticResource FlyoutColorIcon}" />
     <!--#endregion-->
 
 

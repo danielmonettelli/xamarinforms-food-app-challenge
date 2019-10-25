@@ -12,6 +12,7 @@
     <OnPlatform x:Key="BoldFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-Bold.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-Bold" />
+        <On Platform="UWP" Value="Assets/Fonts/ProductSans-Bold.ttf#ProductSans" />
     </OnPlatform>
     <!--#endregion-->
 
@@ -19,6 +20,7 @@
     <OnPlatform x:Key="BoldItalicFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-BoldItalic.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-BoldItalic" />
+        <On Platform="UWP" Value="Assets/Fonts/ProductSans-BoldItalic.ttf#ProductSans" />
     </OnPlatform>
     <!--#endregion-->
 
@@ -26,6 +28,7 @@
     <OnPlatform x:Key="ItalicFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-Italic.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-Italic" />
+        <On Platform="UWP" Value="Assets/Fonts/ProductSans-Italic.ttf#ProductSans" />
     </OnPlatform>
     <!--#endregion-->
 
@@ -33,6 +36,7 @@
     <OnPlatform x:Key="RegularFont_ProductSans" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/ProductSans-Regular.ttf#ProductSans" />
         <On Platform="iOS" Value="ProductSans-Regular" />
+        <On Platform="UWP" Value="Assets/Fonts/ProductSans-Regular.ttf#ProductSans" />
     </OnPlatform>
     <!--#endregion-->
     <!--#endregion-->
@@ -43,6 +47,7 @@
     <OnPlatform x:Key="RegularFont_Pacifico" x:TypeArguments="x:String">
         <On Platform="Android" Value="FontsFamily/Pacifico-Regular.ttf#Pacifico" />
         <On Platform="iOS" Value="Pacifico-Regular" />
+        <On Platform="UWP" Value="Assets/Fonts/Pacifico-Regular.ttf#Pacifico" />
     </OnPlatform>
     <!--#endregion-->
     <!--#endregion-->

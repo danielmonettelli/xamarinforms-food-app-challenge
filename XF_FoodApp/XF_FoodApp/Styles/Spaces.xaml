@@ -11,16 +11,19 @@
     <OnPlatform x:Key="idealSpace" x:TypeArguments="Thickness">
         <On Platform="Android" Value="16,0" />
         <On Platform="iOS" Value="18,0" />
+        <On Platform="UWP" Value="20,0" />
     </OnPlatform>
 
     <OnPlatform x:Key="mediumSpace" x:TypeArguments="Thickness">
         <On Platform="Android" Value="20,0" />
         <On Platform="iOS" Value="22,0" />
+        <On Platform="UWP" Value="24,0" />
     </OnPlatform>
 
     <OnPlatform x:Key="bigSpace" x:TypeArguments="Thickness">
         <On Platform="Android" Value="32,0" />
         <On Platform="iOS" Value="34,0" />
+        <On Platform="UWP" Value="36,0" />
     </OnPlatform>
    <!--#endregion-->
 
@@ -75,6 +78,7 @@
     <OnPlatform x:Key="idealPSpace" x:TypeArguments="Thickness">
         <On Platform="Android" Value="16,0,0,0" />
         <On Platform="iOS" Value="18,0,0,0" />
+        <On Platform="UWP" Value="20,0,0,0" />
     </OnPlatform>
     <!--#endregion-->
 

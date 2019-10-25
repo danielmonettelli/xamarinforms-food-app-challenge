@@ -33,5 +33,19 @@ namespace XF_FoodApp.Views
                 Application.Current.Resources = new WhiteTheme();
             }
         }
+
+        private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            if (e.Value == true)
+            {
+                Application.Current.Resources.Clear();
+                Application.Current.Resources = new DarkTheme();
+            }
+            else
+            {
+                Application.Current.Resources.Clear();
+                Application.Current.Resources = new WhiteTheme();
+            }
+        }
     }
 }

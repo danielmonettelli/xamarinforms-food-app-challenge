@@ -8,6 +8,7 @@
     xmlns:ShellTemplate="clr-namespace:XF_FoodApp.Views.ShellTemplates"
     xmlns:view="clr-namespace:XF_FoodApp.Views"
     xmlns:FontAwesome="clr-namespace:XF_FoodApp.Styles;assembly=XF_FoodApp"
+    xmlns:ImageExtension="clr-namespace:XF_FoodApp.Extensions"
     Title="Delicious Food"
     FlyoutBackgroundImage="img_bgflyout.png"
     FlyoutBackgroundImageAspect="AspectFill"
@@ -36,7 +37,8 @@
         <Color x:Key="NavigationPrimary">#FF9A196B</Color>
         <Style
             x:Key="BaseStyle"
-            TargetType="Element">
+            TargetType="Element"
+            ApplyToDerivedTypes="True">
             <!--  In iOS, this property changes the color of the FlyoutIcon and the selected top tabs  -->
             <Setter Property="Shell.ForegroundColor" Value="{DynamicResource colQua}" />
             <!--  In iOS this property changes the color tabs upper not selected  -->

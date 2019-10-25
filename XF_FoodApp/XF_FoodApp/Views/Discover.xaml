@@ -35,6 +35,7 @@
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Visual="Material" />
+
         </StackLayout>
     </Shell.TitleView>
 
@@ -59,6 +60,24 @@
                         <Label
                             Text="Discovery new places"
                             Style="{StaticResource TxtHeadline4_2}" />
+
+                        <CheckBox
+                            IsChecked="{Binding IsBusy}"
+                            CheckedChanged="CheckBox_CheckedChanged"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Color="Pink">
+                            <CheckBox.IsVisible>
+                                <OnPlatform x:TypeArguments="x:Boolean">
+                                    <On
+                                        Platform="Android, iOS"
+                                        Value="False" />
+                                    <On
+                                        Platform="UWP"
+                                        Value="True" />
+                                </OnPlatform>
+                            </CheckBox.IsVisible>
+                        </CheckBox>
 
                         <CollectionView
                             ItemsSource="{Binding ListRestaurant}"

@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Application.Resources>
-        <ResourceDictionary Source="/Styles/Themes/WhiteTheme.xaml" />
+        <ResourceDictionary Source="/Styles/Themes/DarkTheme.xaml" />
     </Application.Resources>
 
 </Application>
