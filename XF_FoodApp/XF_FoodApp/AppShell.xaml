@@ -49,6 +49,7 @@
             <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource colTabBarBack}" />
             <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource colTabBarUns}" />
             <Setter Property="Shell.TabBarTitleColor" Value="{DynamicResource colPrim}" />
+            <!--<Setter Property="Shell.FlyoutBackgroundImage" Value="img_bgflyout.png"/>-->
         </Style>
         <!--#endregion-->
         
