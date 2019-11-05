@@ -1,6 +1,6 @@
 # XF_FoodApp
 
-
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/monetelli/XF_FoodApp/master/Images/Introduction.png" width="50%"/></div>
 
 ## App focused on my Style Library v1.0
 
