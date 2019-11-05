@@ -1,7 +1,6 @@
+![Introduction](/Images/Introduction.png?raw=true)
+
 # XF_FoodApp
-
-
-
 ## App focused on my Style Library v1.0
 
 
