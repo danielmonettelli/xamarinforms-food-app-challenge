@@ -17,22 +17,22 @@
             Padding="0,0,10,0"
             Orientation="Horizontal">
             <Label
-                Text="Explore restaurants"
                 Style="{StaticResource TxtHeadline6_3}"
+                Text="Explore restaurants"
                 VerticalOptions="CenterAndExpand">
                 <Label.HorizontalOptions>
                     <OnPlatform
                         x:TypeArguments="LayoutOptions"
-                        iOS="EndAndExpand"
-                        Android="StartAndExpand" />
+                        Android="StartAndExpand"
+                        iOS="EndAndExpand" />
                 </Label.HorizontalOptions>
             </Label>
 
             <Switch
-                IsToggled="{Binding IsBusy}"
-                Toggled="Switch_Toggled"
-                OnColor="Black"
                 HorizontalOptions="EndAndExpand"
+                IsToggled="{Binding IsBusy}"
+                OnColor="Black"
+                Toggled="Switch_Toggled"
                 VerticalOptions="CenterAndExpand"
                 Visual="Material" />
 
@@ -44,8 +44,8 @@
             <BoxView BackgroundColor="{DynamicResource colBG1}" />
             <ScrollView>
                 <Grid
-                    Style="{StaticResource GridIdealPSpace}"
-                    RowSpacing="22.5">
+                    RowSpacing="22.5"
+                    Style="{StaticResource GridIdealPSpace}">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height=".7*" />
@@ -58,13 +58,13 @@
                         Spacing="15">
 
                         <Label
-                            Text="Discovery new places"
-                            Style="{StaticResource TxtHeadline4_2}" />
+                            Style="{StaticResource TxtHeadline4_2}"
+                            Text="Discovery new places" />
 
                         <CheckBox
-                            IsChecked="{Binding IsBusy}"
                             CheckedChanged="CheckBox_CheckedChanged"
                             HorizontalOptions="EndAndExpand"
+                            IsChecked="{Binding IsBusy}"
                             VerticalOptions="CenterAndExpand"
                             Color="Pink">
                             <CheckBox.IsVisible>
@@ -80,9 +80,9 @@
                         </CheckBox>
 
                         <CollectionView
+                            HeightRequest="345.5"
                             ItemsSource="{Binding ListRestaurant}"
-                            SelectionMode="Single"
-                            HeightRequest="345.5">
+                            SelectionMode="Single">
                             <CollectionView.ItemsLayout>
                                 <GridItemsLayout Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -93,66 +93,66 @@
                                         BackgroundColor="transparent"
                                         HasShadow="False">
                                         <Frame
-                                            CornerRadius="6"
-                                            WidthRequest="208"
                                             BackgroundColor="{DynamicResource colSurf1}"
+                                            CornerRadius="6"
+                                            HasShadow="False"
                                             Visual="Material"
-                                            HasShadow="False">
+                                            WidthRequest="208">
                                             <StackLayout Spacing="6">
                                                 <Frame
                                                     CornerRadius="6"
-                                                    Visual="Material"
-                                                    HasShadow="False">
+                                                    HasShadow="False"
+                                                    Visual="Material">
                                                     <Image
-                                                        Source="{Binding Image_Restaurant}"
                                                         Aspect="AspectFill"
-                                                        HeightRequest="252" />
+                                                        HeightRequest="252"
+                                                        Source="{Binding Image_Restaurant}" />
                                                 </Frame>
                                                 <Label
                                                     Margin="0,0,0,2"
-                                                    Text="{Binding Title_Restaurant}"
+                                                    LineBreakMode="TailTruncation"
                                                     Style="{StaticResource TxtTitle_1}"
-                                                    LineBreakMode="TailTruncation" />
+                                                    Text="{Binding Title_Restaurant}" />
                                                 <Label
-                                                    Text="{Binding Place_Restaurant}"
+                                                    LineBreakMode="TailTruncation"
                                                     Style="{StaticResource TxtSubTit2_1}"
-                                                    LineBreakMode="TailTruncation" />
+                                                    Text="{Binding Place_Restaurant}" />
                                                 <StackLayout Orientation="Horizontal">
                                                     <Image
                                                         Margin="0,-4,8.2,0"
-                                                        Source="{StaticResource icon_star}"
                                                         HorizontalOptions="Start"
+                                                        Source="{StaticResource icon_star}"
                                                         VerticalOptions="Center" />
                                                     <Label
                                                         Margin="0,0,2,0"
-                                                        Text="{Binding Rating1_Restaurant}"
-                                                        Style="{StaticResource TxtSubTit2_2}"
                                                         HorizontalOptions="Start"
-                                                        LineBreakMode="TailTruncation" />
+                                                        LineBreakMode="TailTruncation"
+                                                        Style="{StaticResource TxtSubTit2_2}"
+                                                        Text="{Binding Rating1_Restaurant}" />
                                                     <Label
                                                         Margin="0,0,10,0"
-                                                        Text="{Binding Rating2_Restaurant}"
-                                                        Style="{StaticResource TxtSubTit2_1}"
                                                         HorizontalOptions="Start"
-                                                        LineBreakMode="TailTruncation" />
+                                                        LineBreakMode="TailTruncation"
+                                                        Style="{StaticResource TxtSubTit2_1}"
+                                                        Text="{Binding Rating2_Restaurant}" />
 
                                                     <Frame
                                                         Margin="0,-4,0,0"
                                                         BackgroundColor="{DynamicResource colPrim}"
-                                                        HasShadow="False"
                                                         CornerRadius="10"
-                                                        Visual="Material"
-                                                        WidthRequest="78"
+                                                        HasShadow="False"
                                                         HeightRequest="18"
                                                         HorizontalOptions="EndAndExpand"
-                                                        VerticalOptions="Center">
+                                                        VerticalOptions="Center"
+                                                        Visual="Material"
+                                                        WidthRequest="78">
                                                         <Label
-                                                            Text="Free delivery"
+                                                            HorizontalOptions="Center"
+                                                            LineBreakMode="TailTruncation"
                                                             MaxLines="1"
                                                             Style="{StaticResource Button_3}"
-                                                            HorizontalOptions="Center"
-                                                            VerticalOptions="Center"
-                                                            LineBreakMode="TailTruncation" />
+                                                            Text="Free delivery"
+                                                            VerticalOptions="Center" />
                                                     </Frame>
                                                 </StackLayout>
                                             </StackLayout>
@@ -171,21 +171,21 @@
                             Padding="0,0,16,0"
                             Orientation="Horizontal">
                             <Label
-                                Text="Top categories"
-                                Style="{StaticResource TxtHeadline6_1}"
                                 HorizontalOptions="Start"
+                                Style="{StaticResource TxtHeadline6_1}"
+                                Text="Top categories"
                                 VerticalOptions="Center" />
                             <Label
-                                Text="Show all"
-                                Style="{StaticResource TxtSubTit1_1}"
                                 HorizontalOptions="EndAndExpand"
+                                Style="{StaticResource TxtSubTit1_1}"
+                                Text="Show all"
                                 VerticalOptions="Center" />
                         </StackLayout>
 
                         <CollectionView
-                            SelectionMode="Single"
+                            HeightRequest="150"
                             ItemsSource="{Binding ListCategory}"
-                            HeightRequest="150">
+                            SelectionMode="Single">
                             <CollectionView.ItemsLayout>
                                 <GridItemsLayout Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -193,32 +193,32 @@
                                 <DataTemplate>
                                     <Frame
                                         Padding="7.5"
+                                        BackgroundColor="{DynamicResource colBG1}"
                                         HasShadow="False"
-                                        Visual="Material"
-                                        BackgroundColor="{DynamicResource colBG1}">
+                                        Visual="Material">
                                         <StackLayout Spacing="4">
                                             <Frame
                                                 Margin="0,0,0,4"
-                                                WidthRequest="88"
+                                                BackgroundColor="{DynamicResource colSurf2}"
                                                 HeightRequest="88"
                                                 Visual="Material"
-                                                BackgroundColor="{DynamicResource colSurf2}">
+                                                WidthRequest="88">
                                                 <Label
-                                                    Text="{Binding Image_Category}"
                                                     FontFamily="{StaticResource CustomIconFont}"
                                                     FontSize="44"
-                                                    TextColor="{Binding ImageColor_Category}"
                                                     HorizontalOptions="Center"
+                                                    Text="{Binding Image_Category}"
+                                                    TextColor="{Binding ImageColor_Category}"
                                                     VerticalOptions="Center" />
                                             </Frame>
 
                                             <Label
-                                                Text="{Binding Title_Category}"
-                                                Style="{StaticResource TxtTitle_1}" />
+                                                Style="{StaticResource TxtTitle_1}"
+                                                Text="{Binding Title_Category}" />
 
                                             <Label
-                                                Text="{Binding Place_Category}"
-                                                Style="{StaticResource TxtSubTit2_1}" />
+                                                Style="{StaticResource TxtSubTit2_1}"
+                                                Text="{Binding Place_Category}" />
 
                                         </StackLayout>
                                     </Frame>

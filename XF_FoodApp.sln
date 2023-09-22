@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29215.179
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF_FoodApp.Android", "XF_FoodApp\XF_FoodApp.Android\XF_FoodApp.Android.csproj", "{9B821775-9350-4BFB-8389-E9A7638BE5CA}"
 EndProject
@@ -131,6 +131,8 @@ Global
 		{E1FCE674-2E21-453D-9542-8E2695DCC52F}.Release|x86.ActiveCfg = Release|Any CPU
 		{E1FCE674-2E21-453D-9542-8E2695DCC52F}.Release|x86.Build.0 = Release|Any CPU
 		{56569968-CC2E-4583-96D1-F6EEAC603CE0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{56569968-CC2E-4583-96D1-F6EEAC603CE0}.Debug|Any CPU.Build.0 = Debug|x86
+		{56569968-CC2E-4583-96D1-F6EEAC603CE0}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{56569968-CC2E-4583-96D1-F6EEAC603CE0}.Debug|ARM.ActiveCfg = Debug|ARM
 		{56569968-CC2E-4583-96D1-F6EEAC603CE0}.Debug|ARM.Build.0 = Debug|ARM
 		{56569968-CC2E-4583-96D1-F6EEAC603CE0}.Debug|ARM.Deploy.0 = Debug|ARM
